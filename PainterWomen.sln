@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "PainterWomen\Presentation.csproj", "{AD6A3E97-F56F-410C-9896-1137BD5858FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{B2EF60AE-D159-4993-9AA6-AA37C4C38EDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foundation", "Foundation\Foundation.csproj", "{EDC4BD23-57F7-45D2-AD51-A7D43045D67F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{635E9DC7-89C8-4546-9A1A-8160922746E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD6A3E97-F56F-410C-9896-1137BD5858FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD6A3E97-F56F-410C-9896-1137BD5858FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD6A3E97-F56F-410C-9896-1137BD5858FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD6A3E97-F56F-410C-9896-1137BD5858FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDC4BD23-57F7-45D2-AD51-A7D43045D67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDC4BD23-57F7-45D2-AD51-A7D43045D67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDC4BD23-57F7-45D2-AD51-A7D43045D67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDC4BD23-57F7-45D2-AD51-A7D43045D67F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{635E9DC7-89C8-4546-9A1A-8160922746E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{635E9DC7-89C8-4546-9A1A-8160922746E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{635E9DC7-89C8-4546-9A1A-8160922746E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{635E9DC7-89C8-4546-9A1A-8160922746E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EDC4BD23-57F7-45D2-AD51-A7D43045D67F} = {B2EF60AE-D159-4993-9AA6-AA37C4C38EDD}
+	EndGlobalSection
+EndGlobal
