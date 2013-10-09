@@ -15,8 +15,6 @@ namespace Foundation
             get { return _instance ?? (_instance = new Core()); }
         }
 
-
-
         public IWindsorContainer Container { get; set; }
     }
 }
