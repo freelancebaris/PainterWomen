@@ -13,18 +13,66 @@
     <link href="~/Content/css/slider.css" rel="stylesheet" />
     <link href="~/Content/css/style.css" rel="stylesheet" />
     <link href="~/Content/css/tabs.css" rel="stylesheet" />
+
+    <script src="/Scripts/site/js/jquery-1.7.min.js"></script>
+    <script src="/Scripts/site/js/jquery.easing.1.3.js"></script>
+    <script src="/Scripts/site/js/tms-0.4.1.js"></script>
+    <script src="/Scripts/site/js/jquery.jcarousel.min.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/Apps/painterapp.js"></script>
+    <script src="~/Scripts/Controllers/HomeController.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider')._TMS({
+                show: 0,
+                pauseOnHover: false,
+                prevBu: false,
+                nextBu: false,
+                playBu: false,
+                duration: 700,
+                preset: 'fade',
+                pagination: '.pags',
+                pagNums: false,
+                slideshow: 7000,
+                numStatus: false,
+                banners: false,// fromLeft, fromRight, fromTop, fromBottom
+                waitBannerAnimation: false,
+                progressBar: false
+            });
+            jQuery('#mycarousel').jcarousel({
+                horisontal: true,
+                wrap: 'circular',
+                scroll: 1,
+                easing: 'easeInOutBack',
+                animation: 1200
+            });
+        });
+    </script>
+
 </header>
 
-<body >
-    <input type="hidden" value="0" ng-model="pagenum" copy-hidden/>
-    <div class="header" ng-controller="HomeController">
+
+
+<body ng-controller="HomeController">
+    <!--==============================header=================================-->
+    <div class="header">
         <div>
             <div class="nav">
                 <nav>
-                   <ul class="menu">
+<<<<<<< HEAD
+                    <ul class="menu">
                         <li ng-repeat="link in links" class="{{link.className}}">
                             <a href="{{link.href}}" >{{link.text}}</a>
                         </li>
+=======
+                   <ul class="menu">
+                        <li class="current li-none"><a href="">Ana sayfa</a></li>
+                        <li><a href="">Hakkında</a></li>
+                        <li><a href="">Galeri</a></li>
+                        <li class="li-left li-none"><a href="">Blog</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">İletişim</a></li>
+>>>>>>> e8c91f34526a3cd8d09a984541274e4f0e641f49
                     </ul>
                 </nav>
             </div>
@@ -41,9 +89,11 @@
                     </ul>
                 </div>
                 <ul class="pags">
-                    <li ng-repeat="num in pageNums">
-                        <a href="#"><strong>0</strong>{{num.number}}</a>
-                    </li>
+                    <li><a href="#"><strong>0</strong>1</a></li>
+                    <li><a href="#"><strong>0</strong>2</a></li>
+                    <li><a href="#"><strong>0</strong>3</a></li>
+                    <li><a href="#"><strong>0</strong>4</a></li>
+                    <li><a href="#"><strong>0</strong>5</a></li>
                 </ul>
             </div>
         </div>
@@ -102,41 +152,5 @@
             </div>
         </div>
     </footer>
-    
-    <script src="/Scripts/site/js/jquery-1.7.min.js"></script>
-    <script src="/Scripts/site/js/jquery.easing.1.3.js"></script>
-    <script src="/Scripts/site/js/tms-0.4.1.js"></script>
-    <script src="/Scripts/site/js/jquery.jcarousel.min.js"></script>
-    <script src="~/Scripts/angular.js"></script>
-    <script src="~/Scripts/Apps/painterapp.js"></script>
-    <script src="~/Scripts/Services/HomeService.js"></script>
-    <script src="~/Scripts/Controllers/HomeController.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.slider')._TMS({
-                show: 0,
-                pauseOnHover: false,
-                prevBu: false,
-                nextBu: false,
-                playBu: false,
-                duration: 700,
-                preset: 'fade',
-                pagination: '.pags',
-                pagNums: false,
-                slideshow: 7000,
-                numStatus: false,
-                banners: false,// fromLeft, fromRight, fromTop, fromBottom
-                waitBannerAnimation: false,
-                progressBar: false
-            });
-            jQuery('#mycarousel').jcarousel({
-                horisontal: true,
-                wrap: 'circular',
-                scroll: 1,
-                easing: 'easeInOutBack',
-                animation: 1200
-            });
-        });
-    </script>
 </body>
 </html>
