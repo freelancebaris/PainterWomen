@@ -3,7 +3,7 @@
     Layout = null;
     
 }
-<html>
+<html ng-app="painterapp">
 <header>
     <link href="~/Content/css/ie.css" rel="stylesheet" />
     <link href="~/Content/css/jquery.fancybox-1.3.4.css" rel="stylesheet" />
@@ -18,8 +18,9 @@
     <script src="/Scripts/site/js/jquery.easing.1.3.js"></script>
     <script src="/Scripts/site/js/tms-0.4.1.js"></script>
     <script src="/Scripts/site/js/jquery.jcarousel.min.js"></script>
-
-
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/Apps/painterapp.js"></script>
+    <script src="~/Scripts/Controllers/HomeController.js"></script>
     <script>
         $(document).ready(function () {
             $('.slider')._TMS({
@@ -37,7 +38,7 @@
                 banners: false,// fromLeft, fromRight, fromTop, fromBottom
                 waitBannerAnimation: false,
                 progressBar: false
-            })
+            });
             jQuery('#mycarousel').jcarousel({
                 horisontal: true,
                 wrap: 'circular',
@@ -52,19 +53,16 @@
 
 
 
-<body>
+<body ng-controller="HomeController">
     <!--==============================header=================================-->
     <div class="header">
         <div>
             <div class="nav">
                 <nav>
                     <ul class="menu">
-                        <li class="current li-none"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li class="li-left li-none"><a href="services.html">Services</a></li>
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="contacts.html">Contacts</a></li>
+                        <li ng-repeat="link in links" class="{{link.className}}">
+                            <a href="{{link.href}}" >{{link.text}}</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -75,16 +73,9 @@
             <div id="slide">
                 <div class="slider">
                     <ul class="items">
-                        <li>
-                            <img src="/Content/images/slide-1.jpg" alt="" /></li>
-                        <li>
-                            <img src="/Content/images/slide-2.jpg" alt="" /></li>
-                        <li>
-                            <img src="/Content/images/slide-3.jpg" alt="" /></li>
-                        <li>
-                            <img src="/Content/images/slide-4.jpg" alt="" /></li>
-                        <li>
-                            <img src="/Content/images/slide-5.jpg" alt="" /></li>
+                        <li ng-repeat="img in sliders">
+                            <img src="{{img.imgSrc}}"/>
+                        </li>
                     </ul>
                 </div>
                 <ul class="pags">
@@ -100,7 +91,6 @@
     <!--==============================content================================-->
     <section id="content">
         <div class="gallery-block">
-          
         </div>
         <div class="page1-row1 pad-1">
             <div class="col-1">
