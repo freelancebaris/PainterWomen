@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CF6DEA
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localization", "Localization\Localization.csproj", "{7AB63E9D-F6AE-43B0-A41B-AE672ABDFA1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,10 @@ Global
 		{635E9DC7-89C8-4546-9A1A-8160922746E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{635E9DC7-89C8-4546-9A1A-8160922746E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{635E9DC7-89C8-4546-9A1A-8160922746E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB63E9D-F6AE-43B0-A41B-AE672ABDFA1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB63E9D-F6AE-43B0-A41B-AE672ABDFA1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB63E9D-F6AE-43B0-A41B-AE672ABDFA1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB63E9D-F6AE-43B0-A41B-AE672ABDFA1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
