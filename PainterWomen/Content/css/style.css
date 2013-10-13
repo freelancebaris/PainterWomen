@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    font: 14px/18px "Times New Roman", Times, serif;
+    font: 14px/18px "Helvetica", Times, serif;
     color: #6f6f6f;
     min-width: 1024px;
     background: #262626;
@@ -43,6 +43,7 @@ a {
 .link {
     color: #bf96c7;
     text-decoration: underline;
+    font-size:11px;
 }
 
     .link:hover {
@@ -51,7 +52,7 @@ a {
     }
 
 .link-1 {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 20px;
     color: #fff;
     font-style: italic;
@@ -83,14 +84,14 @@ a.clr-1:hover {
 }
 
 .text-1 {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 25px;
     color: #fff;
     font-style: italic;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 36px;
     color: #bf96c7;
     font-weight: bold;
@@ -103,7 +104,7 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     color: #bf96c7;
     font-weight: normal;
@@ -113,7 +114,7 @@ h3 {
 .h3 {
     border-bottom: #353535 1px solid;
     padding-top: 5px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
 }
 
 .h3-2 {
@@ -134,15 +135,15 @@ ul {
     }
 
         ul.list-1 li a {
-            font-size: 14px;
-            color: #fff;
+            font-size: 11px;
+            color: #6f6f6f;
             line-height: 18px;
             font-weight: bold;
             text-decoration: underline;
         }
 
             ul.list-1 li a:hover {
-                color: #6f6f6f;
+                color: #fff;
                 text-decoration: none;
             }
 
@@ -159,7 +160,7 @@ ul {
         }
 
             ul.list-2 li span a {
-                font-size: 14px;
+                font-size: 11px;
                 color: #fff;
                 line-height: 18px;
                 font-weight: bold;
@@ -182,13 +183,13 @@ ul {
             float: left;
             background: url(../images/date-bg.png) 15px 0px no-repeat;
             width: 97px;
-            font-size: 48px;
+            font-size: 40px;
             line-height: 60px;
             font-style: italic;
         }
 
             ul.list-3 li span.date span {
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 30px;
                 display: inline-block;
                 float: left;
@@ -196,14 +197,14 @@ ul {
             }
 
         ul.list-3 li span.extra-wrap {
-            font-size: 14px;
+            font-size: 11px;
             color: #6f6f6f;
             line-height: 18px;
             display: block;
         }
 
             ul.list-3 li span.extra-wrap a {
-                font-size: 14px;
+                font-size: 11px;
                 color: #bf96c7;
                 line-height: 18px;
                 text-decoration: underline;
@@ -301,7 +302,7 @@ ul {
 }
 
 .p2 {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .p3 {
@@ -322,6 +323,8 @@ ul {
     background: url(../images/bg.jpg) 0 0 repeat;
     position: relative;
     width: 100%;
+    
+   
 }
 
     .header > div {
@@ -380,6 +383,7 @@ ul.menu {
     display: inline-block;
     display: block;
     padding: 46px 0 70px 21px;
+   
 }
 
     ul.menu li {
@@ -399,7 +403,7 @@ ul.menu {
         }
 
         ul.menu li a {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 24px;
             color: #fff;
             display: inline-block;
@@ -414,8 +418,21 @@ ul.menu {
     width: 1024px;
     margin: 0 auto;
     background: url(../images/bg.jpg) 0 0 repeat;
-    padding-bottom: 49px;
+    padding-bottom: 15px;
     border-bottom: #303030 1px solid;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#content-ic {
+    width: 1021px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    border-bottom: #303030 1px solid;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #F3F3E6;
+    padding-top: 200px;
 }
 
 .img-border {
@@ -446,7 +463,7 @@ ul.menu {
 
 .col-2 {
     float: left;
-    width: 460px;
+    width: 635px;
     margin-right: 60px;
 }
 
@@ -670,7 +687,7 @@ dl {
     #form input {
         border: #3f3f3f 1px solid;
         background: #2c2c2c;
-        font-size: 14px;
+        font-size: 11px;
         font-family: "Times New Roman", Times, serif;
         color: #6f6f6f;
         padding: 4px 10px 5px 10px;
@@ -683,7 +700,7 @@ dl {
     #form textarea {
         border: #3f3f3f 1px solid;
         background: #2c2c2c;
-        font-size: 14px;
+        font-size: 11px;
         font-family: "Times New Roman", Times, serif;
         color: #6f6f6f;
         height: 130px;

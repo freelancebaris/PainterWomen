@@ -28,7 +28,7 @@
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
 
-    <div class="header">
+    <div class="header" style="position: fixed;">
         <div>
             <div class="subpages-nav">
                 <nav>
@@ -47,7 +47,7 @@
         </div>
     </div>
     <!--==============================content================================-->
-    <section id="content">
+    <section id="content-ic">
         <div class="pad-1">
             @RenderBody()
 
