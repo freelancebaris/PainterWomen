@@ -407,7 +407,6 @@ ul.menu {
             letter-spacing: 1px;
             text-shadow: 2px 1px #5F5F5F;
             text-transform: capitalize;
-
             /*text-decoration: none;
             border-bottom-width: 0;
             text-transform: capitalize;
@@ -744,4 +743,10 @@ dl {
     margin: 0 auto;
     border-bottom: #303030 1px solid;
     padding-bottom: 8px;
+}
+
+.img-logo {
+    height: 130px;
+    vertical-align: top;
+    width: 140px;
 }
