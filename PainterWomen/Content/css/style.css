@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    font: 14px/18px "Helvetica", Times, serif;
+    font: 14px/18px "Verdana", Times, serif;
     color: #6f6f6f;
     min-width: 1024px;
     background: #262626;
@@ -19,7 +19,7 @@ body {
     color: #f00;
     width: 50%;
     line-height: 10px;
-    font-size: 10px;
+    font-size: 9px;
     margin: -220% 0 0 0;
     overflow: hidden;
     padding: 0;
@@ -43,7 +43,7 @@ a {
 .link {
     color: #bf96c7;
     text-decoration: underline;
-    font-size:11px;
+    font-size: 10px;
 }
 
     .link:hover {
@@ -52,7 +52,7 @@ a {
     }
 
 .link-1 {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 20px;
     color: #fff;
     font-style: italic;
@@ -84,14 +84,14 @@ a.clr-1:hover {
 }
 
 .text-1 {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 25px;
     color: #fff;
     font-style: italic;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 36px;
     color: #bf96c7;
     font-weight: bold;
@@ -104,7 +104,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 28px;
     line-height: 30px;
     color: #bf96c7;
     font-weight: normal;
@@ -135,7 +135,7 @@ ul {
     }
 
         ul.list-1 li a {
-            font-size: 11px;
+            font-size: 10px;
             color: #6f6f6f;
             line-height: 18px;
             font-weight: bold;
@@ -154,7 +154,7 @@ ul {
     }
 
         ul.list-2 li span {
-            font-size: 14px;
+            font-size: 12px;
             color: #6f6f6f;
             line-height: 18px;
         }
@@ -183,13 +183,13 @@ ul {
             float: left;
             background: url(../images/date-bg.png) 15px 0px no-repeat;
             width: 97px;
-            font-size: 40px;
+            font-size: 35px;
             line-height: 60px;
             font-style: italic;
         }
 
             ul.list-3 li span.date span {
-                font-size: 20px;
+                font-size: 18px;
                 line-height: 30px;
                 display: inline-block;
                 float: left;
@@ -323,8 +323,6 @@ ul {
     background: url(../images/bg.jpg) 0 0 repeat;
     position: relative;
     width: 100%;
-    
-   
 }
 
     .header > div {
@@ -383,7 +381,6 @@ ul.menu {
     display: inline-block;
     display: block;
     padding: 46px 0 70px 21px;
-   
 }
 
     ul.menu li {
@@ -403,10 +400,21 @@ ul.menu {
         }
 
         ul.menu li a {
-            font-size: 16px;
+            font-size: 13px;
             line-height: 24px;
             color: #fff;
             display: inline-block;
+            letter-spacing: 1px;
+            text-shadow: 2px 1px #5F5F5F;
+            text-transform: capitalize;
+
+            /*text-decoration: none;
+            border-bottom-width: 0;
+            text-transform: capitalize;
+            font-family: Verdana;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            text-shadow: 1px 1px #5F5F5F;*/
         }
 
             ul.menu li a:hover, ul.menu li.current a {
