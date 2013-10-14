@@ -9,3 +9,7 @@ painterapp.directive('copyHidden', function () {
         }
     };
 });
+var getBaseUrl = function () {
+    return location.protocol + "//" + location.hostname +
+        (location.port && ":" + location.port) + "/";
+};

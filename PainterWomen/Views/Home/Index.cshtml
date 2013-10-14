@@ -23,8 +23,8 @@
             <div class="nav">
                 <nav>
                     <ul class="menu">
-                        <li ng-repeat="link in links" class="{{link.className}}">
-                            <a href="{{link.href}}">{{link.text}}</a>
+                        <li ng-repeat="link in links" class="{{link.ClassName}}">
+                            <a href="{{link.LinkTo}}" ng-bind="link.LinkText"></a>
                         </li>
                     </ul>
                 </nav>

@@ -17,7 +17,11 @@ namespace PainterWomen
                url: "{Lang}/{controller}/{action}/{id}",
                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
            );
-
+            routes.MapRoute(
+              name: "AjaxCalls",
+              url: "Ajax/{controller}/{action}",
+              defaults: new { controller = "Home", action = "Index" }
+          );
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
