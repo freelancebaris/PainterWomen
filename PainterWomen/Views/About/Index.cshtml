@@ -1,0 +1,42 @@
+﻿@model Foundation.Model.About.About
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="container">
+    <div class="head">@Model.Title</div>
+    <div id="rtcontent">
+        <div class="document" style="width: 1000px;">
+
+            <div class="dcontent" style="width: 970px;">
+                @Model.Content1
+            </div>
+
+           
+
+            <div class="about-content2">
+                 <div class="about-img-dv1">
+                <img src="~/Content/images2/topbanner.jpg" class="about-img1" />
+            </div>
+                @Model.Content2
+            </div>
+
+
+
+            <div class="about-content3">
+                <div class="about-img-dv2">
+                    <img src="~/Content/images2/topbanner.jpg" class="about-img2" />
+                </div>
+                @Model.Content3
+            </div>
+
+
+        </div>
+        <!--documentary ends-->
+
+    </div>
+
+
+    <div class="clear"></div>
+</div>

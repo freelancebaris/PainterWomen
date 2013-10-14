@@ -69,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBusiness.cs" />
     <Compile Include="BlogBusiness.cs" />
     <Compile Include="DenemeBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
