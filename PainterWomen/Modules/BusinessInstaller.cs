@@ -10,11 +10,14 @@ using Foundation.Business;
 
 namespace PainterWomen.Presentation.Modules
 {
+    using Foundation.Abstraction.Business;
+
     public class BusinessInstaller : IWindsorInstaller
     {
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
             container.Register(Component.For(typeof(IDenemeBusiness), typeof(DenemeBusiness)));
+            container.Register(Component.For(typeof(IBlogBusiness), typeof(BlogBusiness)));
         }
     }
 }

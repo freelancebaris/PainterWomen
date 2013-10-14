@@ -84,8 +84,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstraction\Business\IBlogBusiness.cs" />
     <Compile Include="Abstraction\Business\IDenemeBusiness.cs" />
     <Compile Include="Core.cs" />
+    <Compile Include="DataContext.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Model\Blog\Blog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,14 +6,23 @@ using System.Web.Mvc;
 
 namespace PainterWomen.Presentation.Controllers
 {
+    using Foundation;
+    using Foundation.Abstraction.Business;
+
     public class BlogController : Controller
     {
-        //
-        // GET: /Blog/
+        private readonly IBlogBusiness _blogBusiness;
+
+        public BlogController(IBlogBusiness blogBusiness)
+        {
+            _blogBusiness = blogBusiness;
+        }
 
         public ActionResult Index()
         {
-            return View();
+            var blogList = _blogBusiness.GetAllBlogByLang(Enums.Language.Tr);
+
+            return View(blogList);
         }
 
     }

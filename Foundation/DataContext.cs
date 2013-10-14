@@ -2,13 +2,13 @@
 
 namespace Foundation
 {
-    public class DataContext
+    public abstract class DataContext
     {
-        public static string SqliteFileDb = Strings.Connection.ConnectionString;
-        public static IOrmLiteDialectProvider DefaultProvider = SqlServerDialect.Provider;
+        protected static string SqliteFileDb = Strings.Connection.ConnectionString;
+        protected static IOrmLiteDialectProvider DefaultProvider = SqlServerDialect.Provider;
         public static string DefaultConnection = SqliteFileDb;
 
-        public void CreateTableIfNotExists<TEntity>() where TEntity : new()
+        protected void CreateTableIfNotExists<TEntity>() where TEntity : new()
         {
             OrmLiteConfig.DialectProvider = DefaultProvider;
             var dbFactory = new OrmLiteConnectionFactory(SqliteFileDb, DefaultProvider);
@@ -17,5 +17,6 @@ namespace Foundation
                 db.CreateTableIfNotExists<TEntity>();
             }
         }
+
     }
 }
