@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace PainterWomen.Presentation.Controllers
 {
-    public class AboutController : Controller
+    public class AboutController : BaseController
     {
         //
         // GET: /About/

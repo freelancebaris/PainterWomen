@@ -7,9 +7,9 @@ using System.Web.Mvc;
 namespace PainterWomen.Presentation.Controllers
 {
     using Foundation;
+    public class BlogController : BaseController
     using Foundation.Abstraction.Business;
 
-    public class BlogController : Controller
     {
         private readonly IBlogBusiness _blogBusiness;
 

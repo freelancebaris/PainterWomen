@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="painterapp">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -21,13 +21,14 @@
     <script src="/Scripts/site/js/jquery.easing.1.3.js"></script>
     <script src="/Scripts/site/js/tms-0.4.1.js"></script>
     <script src="/Scripts/site/js/jquery.jcarousel.min.js"></script>
-
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/Apps/painterapp.js"></script>
 </head>
 <body>
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
-
+    <input type="hidden" value="@ViewBag.Lang" ng-model="lang" copy-hidden/>
     <div class="header" style="position: fixed;">
         <div>
             <div class="subpages-nav" style="height: 105px;">

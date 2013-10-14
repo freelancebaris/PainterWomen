@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Castle.Windsor;
+using Foundation.Abstraction.Services;
 
 namespace Foundation
 {
@@ -16,5 +17,10 @@ namespace Foundation
         }
 
         public IWindsorContainer Container { get; set; }
+
+        public IMultilingualService Multilingual
+        {
+            get { return Container.Resolve<IMultilingualService>(); }
+        }
     }
 }

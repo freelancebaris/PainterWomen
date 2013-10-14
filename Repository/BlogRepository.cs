@@ -10,7 +10,7 @@ using ServiceStack.OrmLite;
 
 namespace Repository
 {
-    public class BlogRepository :DataContext, IBlogRepository
+    public class BlogRepository : IBlogRepository
     {
         public List<Blog> GetAllBlogByLang(string lang)
         {

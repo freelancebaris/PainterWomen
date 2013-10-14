@@ -126,6 +126,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -592,6 +593,7 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\Services\HomeService.js" />
     <Content Include="Scripts\site\js\html5.js" />
     <Content Include="Scripts\site\js\jquery-1.7.min.js" />
     <Content Include="Scripts\site\js\jquery.easing.1.3.js" />
@@ -621,7 +623,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Scripts\Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -638,6 +639,9 @@
     <ProjectReference Include="..\Localization\Localization.csproj">
       <Project>{7ab63e9d-f6ae-43b0-a41b-ae672abdfa1d}</Project>
       <Name>Localization</Name>
+    <ProjectReference Include="..\Services\Services.csproj">
+      <Project>{38662bc6-e135-4193-b05d-0426b5806bde}</Project>
+      <Name>Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{ec478cf1-0a94-45a1-b1d3-f8a1b436c230}</Project>
