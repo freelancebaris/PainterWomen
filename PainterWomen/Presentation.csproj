@@ -640,6 +640,7 @@
     <ProjectReference Include="..\Localization\Localization.csproj">
       <Project>{7ab63e9d-f6ae-43b0-a41b-ae672abdfa1d}</Project>
       <Name>Localization</Name>
+       </ProjectReference>
     <ProjectReference Include="..\Services\Services.csproj">
       <Project>{38662bc6-e135-4193-b05d-0426b5806bde}</Project>
       <Name>Services</Name>

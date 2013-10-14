@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Foundation.Abstraction.Business;
+using Foundation;
 
 namespace PainterWomen.Presentation.Controllers
 {
-    using Foundation;
     public class BlogController : BaseController
-    using Foundation.Abstraction.Business;
-
     {
         private readonly IBlogBusiness _blogBusiness;
 
