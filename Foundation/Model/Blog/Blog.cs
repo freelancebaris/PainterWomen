@@ -1,7 +1,10 @@
 ﻿namespace Foundation.Model.Blog
 {
+    using ServiceStack.DataAnnotations;
+
     public class Blog
     {
+        [AutoIncrement]
         public int Id { get; set; }
 
         public string Title { get; set; }
