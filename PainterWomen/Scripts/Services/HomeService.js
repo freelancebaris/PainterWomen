@@ -1,16 +1,18 @@
-﻿painterapp.factory('homeService', function() {
+﻿painterapp.factory('homeService', function($http,$q) {
     return {
-        getLinks: function (pageNumber) {
-            var links = [
-                { href: '', text: 'Anasayfa', className: 'li-none' },
-                { href: '', text: 'Hakkımda' },
-                { href: '', text: 'Blog' },
-                { href: '', text: 'Galeri', className: 'li-left li-none' },
-                { href: '', text: 'Hayattan' },
-                { href: '', text: 'İletişim' }
-            ];
-            links[pageNumber].className += " current";
-            return links;
+        getLinks: function (selectedPage) {
+            var deferred = $q.defer();
+            $http({
+                url: getBaseUrl() + 'Ajax' + '/Public/GetMenuLinks',
+                method: 'POST'
+            }).success(function (response) {
+                debugger;
+                if (response.success) {
+                    response.menuList[selectedPage].className += " current";
+                    deferred.resolve(response.menuList);
+                }
+            });
+            return  deferred.promise;
         }
     };
 });
