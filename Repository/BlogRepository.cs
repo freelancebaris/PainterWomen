@@ -10,11 +10,27 @@ using ServiceStack.OrmLite;
 
 namespace Repository
 {
-    public class BlogRepository : IBlogRepository
+    public class BlogRepository :DataContext, IBlogRepository
     {
         public List<Blog> GetAllBlogByLang(string lang)
         {
-            return null;
+           var blogs = new List<Blog>();
+            CreateTableIfNotExists<Blog>();
+
+            OrmLiteConfig.DialectProvider = DefaultProvider;
+            var dbFactory = new OrmLiteConnectionFactory(SqliteFileDb, DefaultProvider);
+
+            using (var db = dbFactory.Open())
+            {
+                var blogList = db.Where<Blog>(new { Lang = lang });
+
+                foreach (Blog blog in blogList)
+                {
+                    blogs.Add(blog);
+                }
+            }
+
+            return blogs;
         }
     }
 }

@@ -129,7 +129,6 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\PublicController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -637,16 +636,19 @@
       <Project>{edc4bd23-57f7-45d2-ad51-a7d43045d67f}</Project>
       <Name>Foundation</Name>
     </ProjectReference>
+<<<<<<< HEAD
     <ProjectReference Include="..\Localization\Localization.csproj">
       <Project>{7ab63e9d-f6ae-43b0-a41b-ae672abdfa1d}</Project>
       <Name>Localization</Name>
-    <ProjectReference Include="..\Services\Services.csproj">
-      <Project>{38662bc6-e135-4193-b05d-0426b5806bde}</Project>
-      <Name>Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{ec478cf1-0a94-45a1-b1d3-f8a1b436c230}</Project>
       <Name>Repository</Name>
+=======
+    <ProjectReference Include="..\Services\Services.csproj">
+      <Project>{38662bc6-e135-4193-b05d-0426b5806bde}</Project>
+      <Name>Services</Name>
+>>>>>>> 34f452ef945d3e2c55ee85a8a3b218b4bba55050
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

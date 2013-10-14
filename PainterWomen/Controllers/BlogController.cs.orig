@@ -6,10 +6,14 @@ using System.Web.Mvc;
 
 namespace PainterWomen.Presentation.Controllers
 {
+<<<<<<< HEAD
     using Foundation;
-    public class BlogController : BaseController
     using Foundation.Abstraction.Business;
 
+    public class BlogController : Controller
+=======
+    public class BlogController : BaseController
+>>>>>>> 34f452ef945d3e2c55ee85a8a3b218b4bba55050
     {
         private readonly IBlogBusiness _blogBusiness;
 
