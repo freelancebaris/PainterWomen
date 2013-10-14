@@ -5,6 +5,6 @@ namespace Foundation.Abstraction.Business
 {
     public interface IBlogBusiness
     {
-        List<Blog> GetAllBlogByLang(Enums.Language language);
+        List<Blog> GetAllBlogByLang(string language);
     }
 }

@@ -211,6 +211,7 @@
     <Content Include="Content\images\portfolio-prev.jpg" />
     <Content Include="Content\images\prev-next.jpg" />
     <Content Include="Content\images\prev.png" />
+    <Content Include="Content\images\seprator.jpg" />
     <Content Include="Content\images\slide-1.jpg" />
     <Content Include="Content\images\slide-2.jpg" />
     <Content Include="Content\images\slide-3.jpg" />
@@ -639,6 +640,7 @@
     <ProjectReference Include="..\Localization\Localization.csproj">
       <Project>{7ab63e9d-f6ae-43b0-a41b-ae672abdfa1d}</Project>
       <Name>Localization</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Services\Services.csproj">
       <Project>{38662bc6-e135-4193-b05d-0426b5806bde}</Project>
       <Name>Services</Name>
