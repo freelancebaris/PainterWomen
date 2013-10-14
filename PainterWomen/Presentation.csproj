@@ -137,6 +137,7 @@
     <Compile Include="Modules\BusinessInstaller.cs" />
     <Compile Include="Modules\ControllerInstaller.cs" />
     <Compile Include="Modules\RepositoryInstaller.cs" />
+    <Compile Include="Modules\ServiceInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WindsorControllerFactory.cs" />
   </ItemGroup>

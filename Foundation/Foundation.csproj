@@ -86,6 +86,7 @@
   <ItemGroup>
     <Compile Include="Abstraction\Business\IBlogBusiness.cs" />
     <Compile Include="Abstraction\Business\IDenemeBusiness.cs" />
+    <Compile Include="Abstraction\Business\IMenuBusiness.cs" />
     <Compile Include="Abstraction\Services\IMultilingualService.cs" />
     <Compile Include="Abstraction\Services\ISessionHelper.cs" />
     <Compile Include="Core.cs" />
