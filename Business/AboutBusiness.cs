@@ -9,6 +9,7 @@ namespace Business
     using Foundation.Abstraction.Business;
     using Foundation.Abstraction.Repository;
     using Foundation.Model.About;
+    using Foundation.Model.About.ViewModel;
 
     public class AboutBusiness : IAboutBusiness
     {
@@ -19,9 +20,10 @@ namespace Business
             this._aboutRepository = aboutRepository;
         }
 
-        public About GetAboutByLang(string lang)
+        public AboutViewModel GetAboutByLang(string lang)
         {
             var about = _aboutRepository.GetAboutByLang(lang);
+
             if (about == null)
             {
                 about = new About
@@ -31,12 +33,18 @@ namespace Business
                             Content3 = "",
                             Title = "",
                             ImageUrl1 = "",
-                            ImageUrl2 = "",
-                            ImageUrl3 = ""
+                            ImageUrl2 = ""
                         };
             }
 
-            return about;
+            var galeries = _aboutRepository.GetAboutImageGaleries();
+
+            var viewModel = new AboutViewModel
+                            {
+                                About = about, AboutImageGalery = galeries
+                            };
+
+            return viewModel;
         }
     }
 }

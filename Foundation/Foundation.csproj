@@ -94,6 +94,8 @@
     <Compile Include="DataContext.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Model\About\About.cs" />
+    <Compile Include="Model\About\AboutImageGalery.cs" />
+    <Compile Include="Model\About\ViewModel\AboutViewModel.cs" />
     <Compile Include="Model\Blog\Blog.cs" />
     <Compile Include="Model\Layout\Menu.cs" />
     <Compile Include="Model\SessionHelper\UserContext.cs" />

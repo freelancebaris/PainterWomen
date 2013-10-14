@@ -11,5 +11,7 @@ namespace Foundation.Abstraction.Repository
     public interface IAboutRepository
     {
         About GetAboutByLang(string lang);
+
+        List<AboutImageGalery> GetAboutImageGaleries();
     }
 }

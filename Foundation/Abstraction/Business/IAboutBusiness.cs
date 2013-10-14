@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 namespace Foundation.Abstraction.Business
 {
     using Foundation.Model.About;
+    using Foundation.Model.About.ViewModel;
 
     public  interface IAboutBusiness
     {
-        About GetAboutByLang(string lang);
+        AboutViewModel GetAboutByLang(string lang);
     }
 }

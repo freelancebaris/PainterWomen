@@ -896,7 +896,7 @@ dl {
 }
 
 .dochead {
-    background-color: #689e18;
+    background-color: #bf96c7;
     height: 45px;
     font: 24px Tahoma, Geneva, sans-serif;
     color: #FFF;
@@ -906,7 +906,7 @@ dl {
 }
 
 .dochead2 {
-    background-color: #689e18;
+    background-color: #bf96c7;
     height: 45px;
     font: 24px Tahoma, Geneva, sans-serif;
     color: #FFF;
@@ -1228,6 +1228,7 @@ dl {
         font: 12px Tahoma, Geneva, sans-serif;
         color: #6b664f;
         text-decoration: none;
+        cursor: pointer;
     }
 
         .flinks a:hover {
@@ -1314,7 +1315,7 @@ dl {
 
 .about-img2 {
     width: 310px;
-    height: 360px;
+    height: 320px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -1330,6 +1331,7 @@ dl {
     width: 910px;
     line-height: 20px;
     margin-top: 15px;
+    margin-left: 16px;
 }
 
 .about-content3 {
@@ -1340,5 +1342,12 @@ dl {
     line-height: 20px;
     margin-top: 15px;
     margin-left: 15px;
+    margin-bottom: 25px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #E0CECE;
 }
 
+.about-img-galery {
+    margin-left: 63px;
+}

@@ -6,6 +6,8 @@ using ServiceStack.OrmLite;
 
 namespace Repository
 {
+    using System.Collections.Generic;
+
     public class AboutRepository : DataContext, IAboutRepository
     {
         public About GetAboutByLang(string lang)
@@ -22,6 +24,23 @@ namespace Repository
             }
 
             return about;
+        }
+
+
+        public List<AboutImageGalery> GetAboutImageGaleries()
+        {
+            var imageGaleries = new List<AboutImageGalery>();
+            CreateTableIfNotExists<AboutImageGalery>();
+
+            OrmLiteConfig.DialectProvider = DefaultProvider;
+            var dbFactory = new OrmLiteConnectionFactory(SqliteFileDb, DefaultProvider);
+
+            using (var db = dbFactory.Open())
+            {
+                imageGaleries = db.Select<AboutImageGalery>();
+            }
+
+            return imageGaleries;
         }
     }
 }

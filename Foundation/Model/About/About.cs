@@ -23,6 +23,5 @@ namespace Foundation.Model.About
 
         public string ImageUrl2 { get; set; }
 
-        public string ImageUrl3 { get; set; }
     }
 }
