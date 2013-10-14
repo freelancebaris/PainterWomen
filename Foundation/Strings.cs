@@ -12,5 +12,9 @@ namespace Foundation
         {
             public const string ConnectionString = "Data Source=.;Initial Catalog=PainterWoman;Integrated Security=SSPI";
         }
+        public struct Session
+        {
+            public const string UserContext = "UserContext";
+        }
     }
 }

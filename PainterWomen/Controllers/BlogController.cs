@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace PainterWomen.Presentation.Controllers
 {
-    public class BlogController : Controller
+    public class BlogController : BaseController
     {
         //
         // GET: /Blog/

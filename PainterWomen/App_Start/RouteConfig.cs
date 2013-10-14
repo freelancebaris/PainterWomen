@@ -12,6 +12,11 @@ namespace PainterWomen
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.MapRoute(
+               name: "MultilingualRoute",
+               url: "{Lang}/{controller}/{action}/{id}",
+               defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+           );
 
             routes.MapRoute(
                 name: "Default",
