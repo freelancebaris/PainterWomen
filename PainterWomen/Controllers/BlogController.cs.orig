@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace PainterWomen.Presentation.Controllers
+{
+<<<<<<< HEAD
+    using Foundation;
+    using Foundation.Abstraction.Business;
+
+    public class BlogController : Controller
+=======
+    public class BlogController : BaseController
+>>>>>>> 34f452ef945d3e2c55ee85a8a3b218b4bba55050
+    {
+        private readonly IBlogBusiness _blogBusiness;
+
+        public BlogController(IBlogBusiness blogBusiness)
+        {
+            _blogBusiness = blogBusiness;
+        }
+
+        public ActionResult Index()
+        {
+            var blogList = _blogBusiness.GetAllBlogByLang(Enums.Language.Tr);
+
+            return View(blogList);
+        }
+
+    }
+}
