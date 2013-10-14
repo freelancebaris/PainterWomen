@@ -128,6 +128,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PublicController.cs" />
     <Compile Include="Global.asax.cs">
@@ -620,6 +621,7 @@
     <Content Include="Views\Home\Index2.cshtml" />
     <Content Include="Views\About\About.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Gallery\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -640,7 +642,7 @@
     <ProjectReference Include="..\Localization\Localization.csproj">
       <Project>{7ab63e9d-f6ae-43b0-a41b-ae672abdfa1d}</Project>
       <Name>Localization</Name>
-       </ProjectReference>
+    </ProjectReference>
     <ProjectReference Include="..\Services\Services.csproj">
       <Project>{38662bc6-e135-4193-b05d-0426b5806bde}</Project>
       <Name>Services</Name>
