@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace PainterWomen.Presentation.Controllers
 {
-    public class GalleryController : Controller
+    public class GalleryController : BaseController
     {
         public ActionResult Index()
         {
