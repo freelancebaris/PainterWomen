@@ -429,6 +429,7 @@ ul.menu {
     border-bottom: #303030 1px solid;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    padding-top: 20px;
 }
 
 #content-ic {
@@ -440,6 +441,7 @@ ul.menu {
     border-bottom-left-radius: 10px;
     background-color: #F3F3E6;
     padding-top: 130px;
+    background: url(../images/bg.jpg) 0 0 repeat;
 }
 
 .img-border {
@@ -459,7 +461,7 @@ ul.menu {
 
 .page1-row1 {
     overflow: hidden;
-    padding-top: 36px;
+    padding-top: 3px;
 }
 
 .col-1 {
@@ -803,7 +805,7 @@ dl {
 #rtcontent {
     float: right;
     width: 1010px;
-    margin-bottom: 17px;
+    margin-bottom: 30px;
 }
 
 
@@ -815,9 +817,10 @@ dl {
 }
 
 .head {
-    font: 58px Verdana, Geneva, sans-serif;
+    font: 40px Verdana, Geneva, sans-serif;
     color: #FFF;
-    margin-top: 10px;
+    margin-top: -10px;
+    margin-bottom: 20px;
 }
 
 .tagln {
@@ -882,7 +885,7 @@ dl {
 
 /*right content details*/
 .document {
-    height: auto;
+    min-height: 343px;
     background-color: #fff;
     width: 670px;
     float: left;
@@ -897,8 +900,9 @@ dl {
     height: 45px;
     font: 24px Tahoma, Geneva, sans-serif;
     color: #FFF;
-    width: 385px;
+    display: inline-block;
     margin-left: -10px;
+    padding-right: 10px;
 }
 
 .dochead2 {
@@ -906,12 +910,14 @@ dl {
     height: 45px;
     font: 24px Tahoma, Geneva, sans-serif;
     color: #FFF;
-    width: 385px;
-    margin-left: 285px;
+    display: inline-block;
+    padding-right: 10px;
+    margin-left: 612px;
 }
 
 .dochead span {
-    margin-left: 20px;
+    margin-left: 24px;
+    padding-right: 12px;
 }
 
 .dhead {
@@ -944,7 +950,7 @@ dl {
 .rtboxbg {
     background: url(../images2/rtboxbg1.jpg) repeat-x;
     height: 1px;
-    width: 690px;
+    width: 670px;
 }
 
 .sosial {
@@ -1245,14 +1251,36 @@ dl {
 .blog-img-dv {
     width: 310px;
     float: left;
-    margin-top: 0x;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
 .blog-img {
-    width: 328px;
+    width: 311px;
     height: 338px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    border: solid;
+    border-color: white;
+    border-width: 6px;
+}
+
+.dv-sosial {
+    margin-left: 60px;
+    margin-right: 35px;
+    float: left;
+    margin-top: -23px;
+    border: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+    border-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white;
+    padding-bottom: 10px;
+    width: 225px;
 }

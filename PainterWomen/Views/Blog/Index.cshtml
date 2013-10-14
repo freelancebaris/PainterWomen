@@ -10,8 +10,7 @@
     @{
         for (int i = 0; i < Model.Count; i++)
         {
-            if (i % 2 == 0)
-            {
+            
         <div id="rtcontent">
             <div class="document">
                 <div>&nbsp;</div>
@@ -25,41 +24,15 @@
                     @Model[i].Content
                 </div>
                 <div class="rtboxbg">&nbsp;</div>
-                <div class="sosial"></div>
+                
             </div>
             <!--documentary ends-->
             <div class="blog-img-dv">
                 <img src="~/Content/images2/topbanner.jpg" class="blog-img" />
             </div>
-
+            <div class="dv-sosial"><div class="sosial"></div></div>
         </div>
-            }
-            else
-            {
-        <div id="rtcontent">
-            <div class="blog-img-dv">
-                <img src="~/Content/images2/topbanner.jpg" class="blog-img" style="width: 310px;" />
-            </div>
-
-            <div class="document">
-                <div>&nbsp;</div>
-                <div class="dochead2">
-                    <span class="dhead2">@Model[i].Title</span>
-                </div>
-                <div>
-                    <span class="post">posted by @Model[i].Author | @Model[i].Date</span>
-                </div>
-                <div class="dcontent">
-                    @Model[i].Content
-                </div>
-                <div class="rtboxbg">&nbsp;</div>
-                <div class="sosial"></div>
-            </div>
-            <!--documentary ends-->
-
-
-        </div>
-            }
+           
         }
     }
 
