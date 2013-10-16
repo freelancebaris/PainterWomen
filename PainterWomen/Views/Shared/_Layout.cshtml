@@ -21,15 +21,10 @@
     <script src="/Scripts/site/js/jquery.easing.1.3.js"></script>
     <script src="/Scripts/site/js/tms-0.4.1.js"></script>
     <script src="/Scripts/site/js/jquery.jcarousel.min.js"></script>
-    <script src="~/Scripts/angular.min.js"></script>
-    <script src="~/Scripts/Apps/painterapp.js"></script>
-    <script src="~/Scripts/Controllers/HomeController.js"></script>
-    <script src="~/Scripts/Services/HomeService.js"></script>
 </head>
 <body>
 
     @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
     <input type="hidden" value="@ViewBag.Lang" ng-model="lang" copy-hidden/>
     <input type="hidden" value="@ViewBag.MenuIndex" ng-model="pagenum" copy-hidden />
     <div class="header" style="position: fixed;" ng-controller="HomeController">
@@ -68,5 +63,10 @@
             </div>
         </div>
     </footer>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/Apps/painterapp.js"></script>
+    <script src="~/Scripts/Controllers/HomeController.js"></script>
+    <script src="~/Scripts/Services/HomeService.js"></script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>

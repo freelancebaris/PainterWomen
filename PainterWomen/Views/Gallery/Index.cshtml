@@ -1,5 +1,16 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
-
-<h2>Index</h2>
+@section scripts
+{
+    <script src="~/Scripts/Services/GalleryService.js"></script>
+    <script src="~/Scripts/Controllers/GalleryController.js"></script>
+}
+<div ng-controller="GalleryController">
+    <ul>
+        <li ng-repeat="album in albums"><a href="/Gallery/Album/{{album.Id}}">
+            <img src="/Content/images/Gallery/{{album.CoverImagePath}}" />
+        </a>
+        </li>
+    </ul>
+</div>

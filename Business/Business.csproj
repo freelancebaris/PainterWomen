@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="BlogBusiness.cs" />
     <Compile Include="DenemeBusiness.cs" />
+    <Compile Include="GalleryBusiness.cs" />
     <Compile Include="MenuBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
