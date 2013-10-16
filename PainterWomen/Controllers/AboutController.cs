@@ -6,19 +6,22 @@ using System.Web.Mvc;
 
 namespace PainterWomen.Presentation.Controllers
 {
+    using Foundation.Abstraction.Business;
+
     public class AboutController : BaseController
     {
-        //
-        // GET: /About/
+        private readonly IAboutBusiness _aboutBusiness;
+
+        public AboutController(IAboutBusiness aboutBusiness)
+        {
+            this._aboutBusiness = aboutBusiness;
+        }
 
         public ActionResult Index()
         {
-            return View();
-        }
+            var about = _aboutBusiness.GetAboutByLang("tr");
 
-        public ActionResult About()
-        {
-            return View();
+            return View(about);
         }
 
     }

@@ -1,13 +1,41 @@
-﻿@model  List<Foundation.Model.Blog.Blog>();
+﻿@model List<Foundation.Model.Blog.Blog>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<div id="container">
+    <div class="head">Blog</div>
 
-@{
-    foreach (var blog in Model)
-    {
-    <h1>blog.Id</h1>
+    @{
+        for (int i = 0; i < Model.Count; i++)
+        {
+            
+        <div id="rtcontent">
+            <div class="document">
+                <div>&nbsp;</div>
+                <div class="dochead">
+                    <span class="dhead">@Model[i].Title</span>
+                </div>
+                <div>
+                    <span class="post">posted by @Model[i].Author | @Model[i].Date</span>
+                </div>
+                <div class="dcontent">
+                    @Model[i].Content
+                </div>
+                <div class="rtboxbg">&nbsp;</div>
+                
+            </div>
+            <!--documentary ends-->
+            <div class="blog-img-dv">
+                <img src="~/Content/images/Blog/@Model[i].ImagePath" class="blog-img" />
+            </div>
+            <div class="dv-sosial"><div class="sosial"></div></div>
+        </div>
+           
+        }
     }
-}
+
+
+    <div class="clear"></div>
+</div>

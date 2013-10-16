@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseRepository.cs" />
+    <Compile Include="AboutRepository.cs" />
     <Compile Include="BlogRepository.cs" />
     <Compile Include="GalleryRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

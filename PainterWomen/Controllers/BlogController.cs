@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using Foundation.Abstraction.Business;
+﻿using System.Web.Mvc;
 using Foundation;
+using Foundation.Abstraction.Business;
 
 namespace PainterWomen.Presentation.Controllers
 {
@@ -19,7 +15,7 @@ namespace PainterWomen.Presentation.Controllers
 
         public ActionResult Index()
         {
-            var blogList = _blogBusiness.GetAllBlogByLang(Enums.Language.Tr);
+            var blogList = _blogBusiness.GetAllBlogByLang("tr");
 
             return View(blogList);
         }

@@ -1,0 +1,69 @@
+﻿@model Foundation.Model.About.ViewModel.AboutViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section header
+{
+    <link href="~/Content/css/hoverbox.css" rel="stylesheet" type="text/css" media="screen, projection" />
+}
+
+<div id="container">
+    <div class="head">@Model.About.Title</div>
+    <div id="rtcontent">
+        <div class="document" style="width: 1000px;">
+
+            <div class="dcontent" style="width: 970px;">
+                @Model.About.Content1
+            </div>
+
+
+            <div class="about-content2">
+                <div class="about-img-dv1">
+                    @if (!string.IsNullOrEmpty(Model.About.ImageUrl1))
+                    {
+                        <img src="~/Content/images/About/@Model.About.ImageUrl1" class="about-img1" />  
+                    }
+                </div>
+                @Model.About.Content2
+            </div>
+
+
+
+            <div class="about-content3">
+                <div class="about-img-dv2">
+                    @if (!string.IsNullOrEmpty(Model.About.ImageUrl2))
+                    {
+                        <img src="~/Content/images/About/@Model.About.ImageUrl2" class="about-img2" />  
+                    }
+                </div>
+                @Model.About.Content3
+            </div>
+
+
+            <div class="about-img-galery">
+                <ul class="hoverbox">
+                    @{
+                        foreach (var img in Model.AboutImageGalery)
+                        {
+                        <li>
+                            <a href="#">
+                                <img src="~/Content/images/About/@img.ImagePath" alt="@img.Description" />
+                                <img src="~/Content/images/About/@img.ImagePath" alt="@img.Description" class="preview" />
+                            </a>
+                        </li>
+                        }
+                    }
+                </ul>
+            </div>
+            <br />
+           
+
+        </div>
+        <!--documentary ends-->
+
+    </div>
+
+
+    <div class="clear"></div>
+</div>

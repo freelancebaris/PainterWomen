@@ -12,6 +12,7 @@ namespace PainterWomen.Presentation.Modules
         {
             container.Register(Component.For(typeof(IBlogRepository), typeof(BlogRepository)));
             container.Register(Component.For(typeof(IGalleryRepository), typeof(GalleryRepository)));
+            container.Register(Component.For(typeof(IAboutRepository), typeof(AboutRepository)));
         }
     }
 }
