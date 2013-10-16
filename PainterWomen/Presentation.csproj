@@ -128,6 +128,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\GaleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PublicController.cs" />
     <Compile Include="Global.asax.cs">
@@ -153,6 +154,8 @@
     <Content Include="Content\images\About\ayse_2.jpg" />
     <Content Include="Content\images\banner.jpg" />
     <Content Include="Content\images\bg.jpg" />
+    <Content Include="Content\images\Blog\ayse_2.jpg" />
+    <Content Include="Content\images\Blog\gallery-1.jpg" />
     <Content Include="Content\images\close.jpg" />
     <Content Include="Content\images\comment-bottom.png" />
     <Content Include="Content\images\comment-top.png" />
@@ -624,6 +627,7 @@
     <Content Include="Views\Home\Index2.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Galery\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
