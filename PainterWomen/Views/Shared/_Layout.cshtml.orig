@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html ng-app="painterapp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("header", required: false)
+
+    <link href="~/Content/css/ie.css" rel="stylesheet" />
+    <link href="~/Content/css/jquery.fancybox-1.3.4.css" rel="stylesheet" />
+    <link href="~/Content/css/reset.css" rel="stylesheet" />
+    <link href="~/Content/css/skin-2.css" rel="stylesheet" />
+    <link href="~/Content/css/skin.css" rel="stylesheet" />
+    <link href="~/Content/css/slider.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/tabs.css" rel="stylesheet" />
+
+    <script src="/Scripts/site/js/jquery-1.7.min.js"></script>
+    <script src="/Scripts/site/js/jquery.easing.1.3.js"></script>
+    <script src="/Scripts/site/js/tms-0.4.1.js"></script>
+    <script src="/Scripts/site/js/jquery.jcarousel.min.js"></script>
+</head>
+<body>
+
+    @Scripts.Render("~/bundles/jquery")
+    <input type="hidden" value="@ViewBag.Lang" ng-model="lang" copy-hidden/>
+    <input type="hidden" value="@ViewBag.MenuIndex" ng-model="pagenum" copy-hidden />
+    <div class="header" style="position: fixed;" ng-controller="HomeController">
+        <div>
+            <div class="subpages-nav" style="height: 105px;">
+                <nav style=" padding-top: 22px;">
+                    <ul class="menu">
+<<<<<<< HEAD
+                        <li ng-repeat="link in links" class="{{link.ClassName}}">
+                            <a href="{{link.LinkTo}}" ng-bind="link.LinkText"></a>
+                        </li>
+=======
+                        <li class="li-none"><a href="/tr/Home/">Ana sayfa</a></li>
+                        <li class="current"><a href="/tr/About/">Hakkında</a></li>
+                        <li><a href="">Galeri</a></li>
+                        <li class="li-left li-none"><a href="/tr/Blog/">Blog</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">İletişim</a></li>
+>>>>>>> 3a20bc8ea5fbd1cc59ea96db447ddc63ea4a2712
+                    </ul>
+                    <h1 style="left: 466px;"><a href="">
+                        <img src="/Content/images/logo.png" alt="" class="img-logo"></a></h1>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--==============================content================================-->
+    <section id="content-ic">
+        <div class="pad-1">
+            @RenderBody()
+
+        </div>
+    </section>
+    <!--==============================footer=================================-->
+    <footer>
+        <span><strong></strong></span>
+        <div class="footer-content">
+            <div class="soc-icons">
+                <a href="#">
+                    <img src="/Content/images/icon-1.png" alt=""></a>
+                <a href="#">
+                    <img src="/Content/images/icon-2.png" alt=""></a>
+                <a href="#">
+                    <img src="/Content/images/icon-3.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/Apps/painterapp.js"></script>
+    <script src="~/Scripts/Controllers/HomeController.js"></script>
+    <script src="~/Scripts/Services/HomeService.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
