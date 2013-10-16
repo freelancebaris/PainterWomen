@@ -59,9 +59,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseRepository.cs" />
     <Compile Include="AboutRepository.cs" />
     <Compile Include="BlogRepository.cs" />
-    <Compile Include="GaleryRepository.cs" />
+    <Compile Include="GalleryRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

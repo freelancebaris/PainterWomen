@@ -87,10 +87,16 @@
     <Compile Include="Abstraction\Business\IAboutBusiness.cs" />
     <Compile Include="Abstraction\Business\IBlogBusiness.cs" />
     <Compile Include="Abstraction\Business\IDenemeBusiness.cs" />
+<<<<<<< HEAD
+    <Compile Include="Abstraction\Business\IGaleryBusiness.cs" />
+    <Compile Include="Abstraction\Repository\IAboutRepository.cs" />
+    <Compile Include="Abstraction\Repository\IGaleryRepository.cs" />
+=======
     <Compile Include="Abstraction\Business\IGalleryBusiness.cs" />
     <Compile Include="Abstraction\Repository\IAboutRepository.cs" />
     <Compile Include="Abstraction\Business\IMenuBusiness.cs" />
     <Compile Include="Abstraction\Repository\IGalleryRepository.cs" />
+>>>>>>> 902be3fa2e36850bc31048ddee655ff0e4d39324
     <Compile Include="Abstraction\Services\IMultilingualService.cs" />
     <Compile Include="Abstraction\Services\ISessionHelper.cs" />
     <Compile Include="Core.cs" />
@@ -100,9 +106,13 @@
     <Compile Include="Model\About\AboutImageGalery.cs" />
     <Compile Include="Model\About\ViewModel\AboutViewModel.cs" />
     <Compile Include="Model\Blog\Blog.cs" />
-    <Compile Include="Model\Gallery\Album.cs" />
+<<<<<<< HEAD
+    <Compile Include="Model\Galery\PhotoGalery.cs" />
     <Compile Include="Model\Galery\PhotoType.cs" />
     <Compile Include="Model\Galery\viewModel\GaleryViewModel.cs" />
+=======
+    <Compile Include="Model\Gallery\Album.cs" />
+>>>>>>> 902be3fa2e36850bc31048ddee655ff0e4d39324
     <Compile Include="Model\Layout\Menu.cs" />
     <Compile Include="Model\SessionHelper\UserContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

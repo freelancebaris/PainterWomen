@@ -11,6 +11,7 @@ namespace PainterWomen.Presentation.Modules
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
             container.Register(Component.For(typeof(IBlogRepository), typeof(BlogRepository)));
+            container.Register(Component.For(typeof(IGalleryRepository), typeof(GalleryRepository)));
             container.Register(Component.For(typeof(IAboutRepository), typeof(AboutRepository)));
             container.Register(Component.For(typeof(IGaleryRepository), typeof(GaleryRepository)));
         }

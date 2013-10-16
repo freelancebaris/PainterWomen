@@ -20,8 +20,8 @@ namespace PainterWomen.Presentation.Modules
         {
             container.Register(Component.For(typeof(IDenemeBusiness), typeof(DenemeBusiness)));
             container.Register(Component.For(typeof(IBlogBusiness), typeof(BlogBusiness)));
-            container.Register(Component.For(typeof(ISessionHelper), typeof(AspNetSessionHelper)));
-            container.Register(Component.For(typeof(IMultilingualService), typeof(ResourceMultilingualService)));
+            container.Register(Component.For(typeof(IMenuBusiness), typeof(MenuBusiness)));
+            container.Register(Component.For(typeof(IGalleryBusiness), typeof(GalleryBusiness)));
             container.Register(Component.For(typeof(IAboutBusiness), typeof(AboutBusiness)));
             container.Register(Component.For(typeof(IGaleryBusiness), typeof(GaleryBusiness)));
         }

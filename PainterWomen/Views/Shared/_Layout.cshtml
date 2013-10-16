@@ -21,25 +21,20 @@
     <script src="/Scripts/site/js/jquery.easing.1.3.js"></script>
     <script src="/Scripts/site/js/tms-0.4.1.js"></script>
     <script src="/Scripts/site/js/jquery.jcarousel.min.js"></script>
-    <script src="~/Scripts/angular.min.js"></script>
-    <script src="~/Scripts/Apps/painterapp.js"></script>
 </head>
 <body>
 
     @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
     <input type="hidden" value="@ViewBag.Lang" ng-model="lang" copy-hidden/>
-    <div class="header" style="position: fixed;">
+    <input type="hidden" value="@ViewBag.MenuIndex" ng-model="pagenum" copy-hidden />
+    <div class="header" style="position: fixed;" ng-controller="HomeController">
         <div>
             <div class="subpages-nav" style="height: 105px;">
                 <nav style=" padding-top: 22px;">
                     <ul class="menu">
-                        <li class="li-none"><a href="/tr/Home/">Ana sayfa</a></li>
-                        <li class="current"><a href="/tr/About/">Hakkında</a></li>
-                        <li><a href="">Galeri</a></li>
-                        <li class="li-left li-none"><a href="/tr/Blog/">Blog</a></li>
-                        <li><a href="">News</a></li>
-                        <li><a href="">İletişim</a></li>
+                        <li ng-repeat="link in links" class="{{link.ClassName}}">
+                            <a href="{{link.LinkTo}}" ng-bind="link.LinkText"></a>
+                        </li>
                     </ul>
                     <h1 style="left: 466px;"><a href="">
                         <img src="/Content/images/logo.png" alt="" class="img-logo"></a></h1>
@@ -68,5 +63,10 @@
             </div>
         </div>
     </footer>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/Apps/painterapp.js"></script>
+    <script src="~/Scripts/Controllers/HomeController.js"></script>
+    <script src="~/Scripts/Services/HomeService.js"></script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>
