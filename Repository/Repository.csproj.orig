@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -59,13 +59,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="BaseRepository.cs" />
-=======
     <Compile Include="AboutRepository.cs" />
->>>>>>> 3a20bc8ea5fbd1cc59ea96db447ddc63ea4a2712
     <Compile Include="BlogRepository.cs" />
+<<<<<<< HEAD
+    <Compile Include="GaleryRepository.cs" />
+=======
     <Compile Include="GalleryRepository.cs" />
+>>>>>>> 902be3fa2e36850bc31048ddee655ff0e4d39324
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -457,6 +457,9 @@ ul.menu {
 .gallery-photo {
     border-top: #303030 1px solid;
     border-bottom: #303030 1px solid;
+    width: 700px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .page1-row1 {
@@ -564,7 +567,7 @@ ul.menu {
 
 .col-9 {
     float: left;
-    width: 744px;
+    width: 600px;
 }
 
 .page4-row1 {
@@ -1351,3 +1354,17 @@ dl {
 .about-img-galery {
     margin-left: 63px;
 }
+
+.plus {
+    width: 155px;
+    border: #3f3f3f 1px solid;
+    padding: 6px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+    .plus:hover {
+        opacity: 0.4;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+    }

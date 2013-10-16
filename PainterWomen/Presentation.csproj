@@ -155,6 +155,8 @@
     <Content Include="Content\images\About\ayse_2.jpg" />
     <Content Include="Content\images\banner.jpg" />
     <Content Include="Content\images\bg.jpg" />
+    <Content Include="Content\images\Blog\ayse_2.jpg" />
+    <Content Include="Content\images\Blog\gallery-1.jpg" />
     <Content Include="Content\images\close.jpg" />
     <Content Include="Content\images\comment-bottom.png" />
     <Content Include="Content\images\comment-top.png" />
@@ -629,6 +631,7 @@
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Gallery\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Galery\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

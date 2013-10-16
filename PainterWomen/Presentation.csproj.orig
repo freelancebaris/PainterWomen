@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -128,7 +128,11 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
+<<<<<<< HEAD
+    <Compile Include="Controllers\GaleryController.cs" />
+=======
     <Compile Include="Controllers\GalleryController.cs" />
+>>>>>>> 902be3fa2e36850bc31048ddee655ff0e4d39324
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PublicController.cs" />
     <Compile Include="Global.asax.cs">
@@ -155,6 +159,8 @@
     <Content Include="Content\images\About\ayse_2.jpg" />
     <Content Include="Content\images\banner.jpg" />
     <Content Include="Content\images\bg.jpg" />
+    <Content Include="Content\images\Blog\ayse_2.jpg" />
+    <Content Include="Content\images\Blog\gallery-1.jpg" />
     <Content Include="Content\images\close.jpg" />
     <Content Include="Content\images\comment-bottom.png" />
     <Content Include="Content\images\comment-top.png" />
@@ -627,11 +633,9 @@
     <Content Include="Scripts\site\js\PIE.php" />
     <Content Include="Views\Home\Index2.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Gallery\Index.cshtml" />
-=======
     <Content Include="Views\About\Index.cshtml" />
->>>>>>> 3a20bc8ea5fbd1cc59ea96db447ddc63ea4a2712
+    <Content Include="Views\Galery\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

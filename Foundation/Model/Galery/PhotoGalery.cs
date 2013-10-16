@@ -4,18 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Foundation.Model.About
+namespace Foundation.Model.Galery
 {
-    using ServiceStack.DataAnnotations;
-
-    public class AboutImageGalery
+    public class PhotoGalery
     {
-        [AutoIncrement]
         public int Id { get; set; }
 
-        public string ImagePath { get; set; }
+        public string Name { get; set; }
 
         public string Description { get; set; }
+
+        public PhotoType PhotoType { get; set; }
 
         public string Lang { get; set; }
     }
