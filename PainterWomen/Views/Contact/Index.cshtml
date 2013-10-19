@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+    	<div class="pad-1">
+            <div class="page6-row1">
+            	<div class="col-14">
+                    <h2 class="h2">Contact info:</h2>
+					<dl>
+                    	<dt class="clr-1"><strong >Paris Clark</strong><br>8901 Marmora Road, Glasgow, D04 89GR</dt>
+                        <dd><span>Telephone:</span>+1 959 603 6035</dd>
+                        <dd><span>Fax:</span>+1 504 889 9898</dd>
+                        <dd class="p3"><span>Email:</span><a href="#" class="link">mail@thomsander.com</a></dd>
+                     </dl> 
+                </div> 
+             
+                <div class="col-16">
+                    <h2 class="h2 p2">Contact form:</h2>
+					<form id="form" method="post" >
+                      <fieldset>
+                        <label><input type="text" value="Full Name" onBlur="if(this.value=='') this.value='Full Name'" onFocus="if(this.value =='Full Name' ) this.value=''"></label>
+                        <label><input type="text"  value="Email" onBlur="if(this.value=='') this.value='Email'" onFocus="if(this.value =='Email' ) this.value=''"></label>
+                        <label><textarea  style="width: 450px"  onBlur="if(this.value==''){this.value='Message'}" onFocus="if(this.value=='Message'){this.value=''}">Message</textarea></label>
+                        <div class="btns"><a href="#" class="link-1">Clear</a><a href="#" class="link-1" onClick="document.getElementById('form').submit()">Send</a></div>
+                      </fieldset>  
+                    </form> 
+                </div>
+            </div>
+        </div>           
+    
