@@ -15,7 +15,7 @@ namespace Repository
         public BaseRepository()
         {
             OrmLiteConfig.DialectProvider = DefaultProvider;
-            var dbFactory = new OrmLiteConnectionFactory("Server=.;Database=MuminBlogDb;Trusted_Connection=True;");
+            var dbFactory = new OrmLiteConnectionFactory("Server=.;Database=PainterWoman;Trusted_Connection=True;");
             Connection = dbFactory;
         }
     }

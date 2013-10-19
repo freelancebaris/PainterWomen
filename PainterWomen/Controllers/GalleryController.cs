@@ -29,5 +29,11 @@ namespace PainterWomen.Presentation.Controllers
             return Json(new {success = true, albums = albums});
         }
 
+        public ActionResult Detail()
+        {
+            ViewBag.MenuIndex = 3;
+            return View();
+        }
+
     }
 }
