@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Detail";
+}
+@section scripts
+{
+    <script src="~/Scripts/Controllers/GalleryController.js"></script>
+    <script src="~/Scripts/Services/GalleryService.js"></script>
+}
+<link href="~/Content/gallery.css" rel="stylesheet" />
+<div class="bar-gallery" ng-controller="GalleryController">
+    <div>
+        <input type="button" value="Play" ng-click="playSlide();" ng-disabled="isPlay" />
+        <input type="button" value="Stop" ng-click="stopSlide()" ng-disabled="!isPlay" />
+        <img class="mainImage" ng-src="{{selectedImage.src}}" />
+    </div>
+    <div class="thumpImages">
+        <input type="button" class="scrollBack" value="<" ng-mouseenter="scrollBack()" ng-mouseleave="scrollRelease()" />
+        <input type="button" class="scrollForward" value=">" ng-mouseenter="scrollForward()" ng-mouseleave="scrollRelease()" />
+        <ul class="thumpList">
+            <li ng-repeat="image in thumpImages">
+                <img ng-src="{{image.src}}" ng-class="{selected:image.Id == selectedImage.Id}" ng-click="setImage(image)" />
+            </li>
+        </ul>
+
+    </div>
+</div>

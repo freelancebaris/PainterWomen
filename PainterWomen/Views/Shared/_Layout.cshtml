@@ -27,12 +27,12 @@
     @Scripts.Render("~/bundles/jquery")
     <input type="hidden" value="@ViewBag.Lang" ng-model="lang" copy-hidden/>
     <input type="hidden" value="@ViewBag.MenuIndex" ng-model="pagenum" copy-hidden />
-    <div class="header" style="position: fixed;" ng-controller="HomeController">
+    <div class="header"  ng-controller="HomeController">
         <div>
             <div class="subpages-nav" style="height: 105px;">
                 <nav style="padding-top: 22px;">
                     <ul class="menu">
-                        <li ng-repeat="link in links" class="{{link.ClassName}}">
+                        <li ng-repeat="link in links" ng-class="link.ClassName">
                             <a href="{{link.LinkTo}}" ng-bind="link.LinkText"></a>
                         </li>
                     </ul>
