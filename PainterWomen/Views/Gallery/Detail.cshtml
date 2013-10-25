@@ -7,20 +7,52 @@
     <script src="~/Scripts/Services/GalleryService.js"></script>
 }
 <link href="~/Content/gallery.css" rel="stylesheet" />
-<div class="bar-gallery" ng-controller="GalleryController">
-    <div>
-        <input type="button" value="Play" ng-click="playSlide();" ng-disabled="isPlay" />
-        <input type="button" value="Stop" ng-click="stopSlide()" ng-disabled="!isPlay" />
-        <img class="mainImage" ng-src="{{selectedImage.src}}" />
-    </div>
-    <div class="thumpImages">
-        <input type="button" class="scrollBack" value="<" ng-mouseenter="scrollBack()" ng-mouseleave="scrollRelease()" />
-        <input type="button" class="scrollForward" value=">" ng-mouseenter="scrollForward()" ng-mouseleave="scrollRelease()" />
-        <ul class="thumpList">
-            <li ng-repeat="image in thumpImages">
-                <img ng-src="{{image.src}}" ng-class="{selected:image.Id == selectedImage.Id}" ng-click="setImage(image)" />
-            </li>
-        </ul>
 
+
+
+
+<div class="page3-row1">
+    <div class="col-8" style="padding-right: 0px; margin-top: -33px;">
+        <h2 class="h2 p2">Categories:</h2>
+        <ul class="list-1 nav">
+            <li class="selected"><a href="#tab-1">Fashion</a></li>
+            <li><a href="#tab-2">Animals</a></li>
+            <li><a href="#tab-3">Landscapes</a></li>
+            <li><a href="#tab-4">Sport</a></li>
+            <li><a href="#tab-5">Portrait</a></li>
+            <li><a href="#tab-6">Wedding</a></li>
+            <li><a href="#tab-7">Urban</a></li>
+        </ul>
+    </div>
+    <div class="col-9">
+        <div id="tab-1" class="tab-content gallery-photo" style="border-top: none; border-bottom: none;">
+            <div class="inner">
+                <div class="bar-gallery" ng-controller="GalleryController">
+                    <div style="border: solid; margin-left: 17px; border-width: 1px;border-color: #6f6f6f">
+
+                        <img class="mainImage" ng-src="{{selectedImage.src}}" />
+                    </div>
+                    <div class="thumpImages">
+                        <input type="button" class="scrollBack" value="<" ng-mouseenter="scrollBack()" ng-mouseleave="scrollRelease()" />
+                        <input type="button" class="scrollForward" value=">" ng-mouseenter="scrollForward()" ng-mouseleave="scrollRelease()" />
+                        <ul class="thumpList">
+                            <li ng-repeat="image in thumpImages">
+                                <img ng-src="{{image.src}}" ng-class="{selected:image.Id == selectedImage.Id}" ng-click="setImage(image)" />
+                            </li>
+                        </ul>
+
+                    </div>
+                    @*  <input type="button" value="Play" ng-click="playSlide();" ng-disabled="isPlay" />
+                    <input type="button" value="Stop" ng-click="stopSlide()" ng-disabled="!isPlay" />*@
+                    <div style="margin-left: 300px; margin-top: 15px">
+                        <a ng-click="playSlide();" ng-disabled="isPlay">
+                            <img src="/Content/images/play.png" style="height: 38px;" alt="Play"></a>
+                        <a ng-click="stopSlide()" ng-disabled="!isPlay">
+                            <img src="/Content/images/stop.png" style="height: 40px;" alt="Stop"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </div>
