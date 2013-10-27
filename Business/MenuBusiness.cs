@@ -25,8 +25,8 @@ namespace Business
             {
                 menuList.Add(new Menu() { LinkTo = "/tr/Home/", LinkText = "Anasayfa", ClassName = "li-none" });
                 menuList.Add(new Menu() { LinkTo = "/tr/About", LinkText = "Hakkımda", ClassName = "" });
-                menuList.Add(new Menu() { LinkTo = "tr/Blog", LinkText = "Blog", ClassName = "" });
-                menuList.Add(new Menu() { LinkTo = "", LinkText = "Galeri", ClassName = "li-left li-none" });
+                menuList.Add(new Menu() { LinkTo = "/tr/Blog", LinkText = "Blog", ClassName = "" });
+                menuList.Add(new Menu() { LinkTo = "/tr/Gallery/Detail", LinkText = "Galeri", ClassName = "li-left li-none" });
                 //menuList.Add(new Menu() { LinkTo = "", LinkText = "Hayattan", ClassName = "" });
                 menuList.Add(new Menu() { LinkTo = "/tr/Contact", LinkText = "İletişim", ClassName = "" });
             }

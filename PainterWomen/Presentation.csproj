@@ -156,6 +156,7 @@
     <Content Include="Content\gallery.css" />
     <Content Include="Content\images\About\ayse_1.jpg" />
     <Content Include="Content\images\About\ayse_2.jpg" />
+    <Content Include="Content\images\back-ico.png" />
     <Content Include="Content\images\banner.jpg" />
     <Content Include="Content\images\bg.jpg" />
     <Content Include="Content\images\Blog\ayse_2.jpg" />
@@ -182,6 +183,7 @@
     <Content Include="Content\images\marker-1.gif" />
     <Content Include="Content\images\nav-line.png" />
     <Content Include="Content\images\nav.png" />
+    <Content Include="Content\images\next-ico.png" />
     <Content Include="Content\images\next.png" />
     <Content Include="Content\images\page2-img1.jpg" />
     <Content Include="Content\images\page4-img1.jpg" />
@@ -190,6 +192,7 @@
     <Content Include="Content\images\page5-img1.jpg" />
     <Content Include="Content\images\pagination-bg.png" />
     <Content Include="Content\images\pagination.png" />
+    <Content Include="Content\images\play.png" />
     <Content Include="Content\images\portfolio-1-big.jpg" />
     <Content Include="Content\images\portfolio-1.jpg" />
     <Content Include="Content\images\portfolio-10-big.jpg" />
@@ -228,6 +231,7 @@
     <Content Include="Content\images\slide-3.jpg" />
     <Content Include="Content\images\slide-4.jpg" />
     <Content Include="Content\images\slide-5.jpg" />
+    <Content Include="Content\images\stop.png" />
     <Content Include="Content\images\transp.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />

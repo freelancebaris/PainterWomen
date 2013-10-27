@@ -29,18 +29,19 @@
     <input type="hidden" value="@ViewBag.MenuIndex" ng-model="pagenum" copy-hidden />
     <div class="header"  ng-controller="HomeController">
         <div>
-            <div class="subpages-nav" style="height: 105px;">
-                <nav style="padding-top: 22px;">
+            <div class="subpages-nav" style="height: 125px;">
+                <nav style=" padding-top: 40px;">
                     <ul class="menu">
-                        <li ng-repeat="link in links" ng-class="link.ClassName">
-                            <a href="{{link.LinkTo}}" ng-bind="link.LinkText"></a>
-                        </li>
+                        <li class="li-none"><a href="/tr/Home/">Ana sayfa</a></li>
+                        <li><a href="/tr/About">Hakkında</a></li>
+                        <li><a href="/tr/Gallery/Detail">Galeri</a></li>
+                        <li class="li-left li-none "><a href="/tr/Blog">Blog</a></li>
+                        <li><a href="">Ne Yapıyoruz?</a></li>
+                        <li><a href="/tr/Contact">İletişim</a></li>
                     </ul>
-                    <h1 style="left: 466px;"><a href="">
-                        <img src="/Content/images/logo.png" alt="" class="img-logo"></a></h1>
+                    <h1><a href="">
+                        <img src="/Content/images/logo.png" alt=""></a></h1>
                 </nav>
-
-
             </div>
         </div>
     </div>
