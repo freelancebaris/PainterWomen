@@ -7,7 +7,8 @@ painterapp.controller('HomeController', function ($scope,homeService) {
         { imgSrc: '/Content/images/slide-2.jpg' },
         { imgSrc: '/Content/images/slide-3.jpg' },
         { imgSrc: '/Content/images/slide-4.jpg' },
-        { imgSrc: '/Content/images/slide-5.jpg' }
+        { imgSrc: '/Content/images/slide-5.jpg' },
+        
     
     ];
     $scope.pageNums = [];

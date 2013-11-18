@@ -180,6 +180,7 @@
     <Content Include="Content\images\icon-3.png" />
     <Content Include="Content\images\li.png" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logo2.png" />
     <Content Include="Content\images\marker-1.gif" />
     <Content Include="Content\images\nav-line.png" />
     <Content Include="Content\images\nav.png" />
