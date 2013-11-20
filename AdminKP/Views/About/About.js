@@ -6,9 +6,9 @@
             sorting: false,
             actions: {
                 listAction: '/About/GetAbout',
-                deleteAction: '/Planning/DeleteEtsoCode',
-                updateAction: '/Planning/UpdateEtsoCode',
-                createAction: '/Planning/CreateEtsoCode',
+                deleteAction: '/About/GetAbout',
+                updateAction: '/About/GetAbout',
+                createAction: '/About/GetAbout'
             },
 
             fields: {
