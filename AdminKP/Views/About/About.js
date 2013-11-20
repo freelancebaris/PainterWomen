@@ -20,25 +20,25 @@
                 },
 
                 Title: {
-                    title: 'Müşteri Numarası',
+                    title: '',
                 },
 
                 Content1: {
-                    title: 'Müşteri Kodu',
+                    title: '',
                 },
 
                 Content2: {
-                    title: 'Etso Kodu',
+                    title: '',
                     width: '17%',
                 },
                 
                 Content3: {
-                    title: 'Etso Kodu',
+                    title: '',
                     width: '17%',
                 },
                 
                 Lang: {
-                    title: 'Etso Kodu',
+                    title: '',
                     width: '17%',
                 }
             }
