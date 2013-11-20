@@ -84,11 +84,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstraction\Business\AdminKP\IAdminAboutBusiness.cs" />
     <Compile Include="Abstraction\Business\IAboutBusiness.cs" />
     <Compile Include="Abstraction\Business\IBlogBusiness.cs" />
     <Compile Include="Abstraction\Business\IDenemeBusiness.cs" />
     <Compile Include="Abstraction\Business\IGaleryBusiness.cs" />
     <Compile Include="Abstraction\Business\IGalleryBusiness.cs" />
+    <Compile Include="Abstraction\Repository\AdminKP\IAdminAboutRepository.cs" />
     <Compile Include="Abstraction\Repository\IAboutRepository.cs" />
     <Compile Include="Abstraction\Business\IMenuBusiness.cs" />
     <Compile Include="Abstraction\Repository\IGaleryRepository.cs" />

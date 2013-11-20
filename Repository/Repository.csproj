@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminKP\AdminAboutRepository.cs" />
     <Compile Include="BaseRepository.cs" />
     <Compile Include="AboutRepository.cs" />
     <Compile Include="BlogRepository.cs" />
