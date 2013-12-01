@@ -16,10 +16,12 @@ namespace Repository
             var workshops = new List<WorkshopItem>();
             using (var db = Connection.Open())
             {
-                workshops = db.Select<WorkshopItem>()
-                    
+                workshops = db.Select<WorkshopItem>(ws => ws.Lang == lang)
+                    .OrderByDescending(ws => ws.Id)
+                    .Take(5)
                     .ToList();
             }
+            
             return workshops;
         }
     }

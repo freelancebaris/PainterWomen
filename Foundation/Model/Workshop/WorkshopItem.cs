@@ -5,7 +5,7 @@ namespace Foundation.Model.Workshop
     [Alias("Workshop")]
     public class WorkshopItem
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Title { get; set; }
         public string Href { get; set; }
         public string Description { get; set; }
