@@ -11,16 +11,12 @@ namespace Repository.AdminKP
 
     using ServiceStack.OrmLite;
 
-    public class AdminAboutRepository :DataContext, IAdminAboutRepository
+    public class AdminAboutRepository :BaseRepository, IAdminAboutRepository
     {
         public About GetAbout()
         {
             List<About> about;
-
-            OrmLiteConfig.DialectProvider = DefaultProvider;
-            var dbFactory = new OrmLiteConnectionFactory(SqliteFileDb, DefaultProvider);
-
-            using (var db = dbFactory.Open())
+            using (var db = Connection.Open())
             {
                 about = db.Select<About>();
             }

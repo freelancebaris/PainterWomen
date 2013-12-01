@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Foundation;
+﻿using Foundation;
 using ServiceStack.OrmLite;
-using ServiceStack.OrmLite.SqlServer;
 
 namespace Repository
 {
@@ -15,7 +9,7 @@ namespace Repository
         public BaseRepository()
         {
             OrmLiteConfig.DialectProvider = DefaultProvider;
-            var dbFactory = new OrmLiteConnectionFactory("Server=.;Database=PainterWoman;Trusted_Connection=True;");
+            var dbFactory = new OrmLiteConnectionFactory(Strings.Connection.ConnectionString);
             Connection = dbFactory;
         }
     }

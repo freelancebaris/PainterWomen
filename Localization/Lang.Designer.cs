@@ -59,5 +59,41 @@ namespace Localization {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hakkımda.
+        /// </summary>
+        public static string Home_AboutMe {
+            get {
+                return ResourceManager.GetString("Home_AboutMe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hakkımda bazı şeylerden bazıları da bunlardır ve bunlar bazı şeyler kadar çok önemli şeylerdir..
+        /// </summary>
+        public static string Home_AboutMeText {
+            get {
+                return ResourceManager.GetString("Home_AboutMeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Devam.
+        /// </summary>
+        public static string Home_ReadMore {
+            get {
+                return ResourceManager.GetString("Home_ReadMore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Çalışmalarım.
+        /// </summary>
+        public static string Home_Workshop {
+            get {
+                return ResourceManager.GetString("Home_Workshop", resourceCulture);
+            }
+        }
     }
 }

@@ -11,6 +11,7 @@ painterapp.controller('HomeController', function ($scope,homeService) {
         
     
     ];
+    $scope.workshops = homeService.getWorkshops();
     $scope.pageNums = [];
     for (var i = 0; i < $scope.sliders.length; i++) {
         $scope.pageNums.push({ number: i+1 });

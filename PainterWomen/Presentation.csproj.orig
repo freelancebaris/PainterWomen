@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -128,11 +128,9 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
-<<<<<<< HEAD
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\GaleryController.cs" />
-=======
     <Compile Include="Controllers\GalleryController.cs" />
->>>>>>> 902be3fa2e36850bc31048ddee655ff0e4d39324
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PublicController.cs" />
     <Compile Include="Global.asax.cs">
@@ -155,6 +153,7 @@
     <Content Include="Content\css\slider.css" />
     <Content Include="Content\css\style.css" />
     <Content Include="Content\css\tabs.css" />
+    <Content Include="Content\gallery.css" />
     <Content Include="Content\images\About\ayse_1.jpg" />
     <Content Include="Content\images\About\ayse_2.jpg" />
     <Content Include="Content\images\banner.jpg" />
@@ -287,6 +286,34 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="images\slider\1.jpg" />
+    <Content Include="images\slider\10.jpg" />
+    <Content Include="images\slider\11.jpg" />
+    <Content Include="images\slider\12.jpg" />
+    <Content Include="images\slider\13.jpg" />
+    <Content Include="images\slider\14.jpg" />
+    <Content Include="images\slider\2.jpg" />
+    <Content Include="images\slider\3.jpg" />
+    <Content Include="images\slider\4.jpg" />
+    <Content Include="images\slider\5.jpg" />
+    <Content Include="images\slider\6.jpg" />
+    <Content Include="images\slider\7.jpg" />
+    <Content Include="images\slider\8.jpg" />
+    <Content Include="images\slider\9.jpg" />
+    <Content Include="images\slider\thump\t1.jpg" />
+    <Content Include="images\slider\thump\t10.jpg" />
+    <Content Include="images\slider\thump\t11.jpg" />
+    <Content Include="images\slider\thump\t12.jpg" />
+    <Content Include="images\slider\thump\t13.jpg" />
+    <Content Include="images\slider\thump\t14.jpg" />
+    <Content Include="images\slider\thump\t2.jpg" />
+    <Content Include="images\slider\thump\t3.jpg" />
+    <Content Include="images\slider\thump\t4.jpg" />
+    <Content Include="images\slider\thump\t5.jpg" />
+    <Content Include="images\slider\thump\t6.jpg" />
+    <Content Include="images\slider\thump\t7.jpg" />
+    <Content Include="images\slider\thump\t8.jpg" />
+    <Content Include="images\slider\thump\t9.jpg" />
     <Content Include="Scripts\angular-bootstrap-prettify.js" />
     <Content Include="Scripts\angular-bootstrap-prettify.min.js" />
     <Content Include="Scripts\angular-bootstrap.js" />
@@ -306,6 +333,17 @@
     <Content Include="Scripts\Apps\painterapp.js" />
     <Content Include="Scripts\Controllers\GalleryController.js" />
     <Content Include="Scripts\Controllers\HomeController.js" />
+    <Content Include="Scripts\GallerySlider\ad_next.png" />
+    <Content Include="Scripts\GallerySlider\ad_prev.png" />
+    <Content Include="Scripts\GallerySlider\ad_scroll_back.png" />
+    <Content Include="Scripts\GallerySlider\ad_scroll_forward.png" />
+    <Content Include="Scripts\GallerySlider\jquery.ad-gallery.css" />
+    <Content Include="Scripts\GallerySlider\jquery.ad-gallery.js" />
+    <Content Include="Scripts\GallerySlider\jquery.ad-gallery.min.js" />
+    <Content Include="Scripts\GallerySlider\LICENSE.txt" />
+    <Content Include="Scripts\GallerySlider\loader.gif" />
+    <Content Include="Scripts\GallerySlider\opa75.png" />
+    <Content Include="Scripts\GallerySlider\trans.gif" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
     <Content Include="Scripts\i18n\angular-locale_af.js" />
@@ -636,6 +674,11 @@
     <Content Include="Views\Gallery\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Galery\Index.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\Gallery\Detail.cshtml" />
+=======
+    <Content Include="Views\Contact\Index.cshtml" />
+>>>>>>> 9b853b570e961fb1417e6ac7eb00539732d56c01
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

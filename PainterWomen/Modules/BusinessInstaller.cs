@@ -24,6 +24,7 @@ namespace PainterWomen.Presentation.Modules
             container.Register(Component.For(typeof(IGalleryBusiness), typeof(GalleryBusiness)));
             container.Register(Component.For(typeof(IAboutBusiness), typeof(AboutBusiness)));
             container.Register(Component.For(typeof(IGaleryBusiness), typeof(GaleryBusiness)));
+            container.Register(Component.For(typeof(IWorkshopBusiness), typeof(WorkshopBusiness)));
         }
     }
 }

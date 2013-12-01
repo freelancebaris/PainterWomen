@@ -8,17 +8,13 @@ namespace Repository
 {
     using System.Collections.Generic;
 
-    public class AboutRepository : DataContext, IAboutRepository
+    public class AboutRepository : BaseRepository, IAboutRepository
     {
         public About GetAboutByLang(string lang)
         {
             About about;
             CreateTableIfNotExists<About>();
-
-            OrmLiteConfig.DialectProvider = DefaultProvider;
-            var dbFactory = new OrmLiteConnectionFactory(SqliteFileDb, DefaultProvider);
-
-            using (var db = dbFactory.Open())
+            using (var db = Connection.Open())
             {
                 about = db.FirstOrDefault<About>(a => a.Lang == lang);
             }
@@ -32,10 +28,7 @@ namespace Repository
             var imageGaleries = new List<AboutImageGalery>();
             CreateTableIfNotExists<AboutImageGalery>();
 
-            OrmLiteConfig.DialectProvider = DefaultProvider;
-            var dbFactory = new OrmLiteConnectionFactory(SqliteFileDb, DefaultProvider);
-
-            using (var db = dbFactory.Open())
+            using (var db = Connection.Open())
             {
                 imageGaleries = db.Select<AboutImageGalery>();
             }

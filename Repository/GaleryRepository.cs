@@ -7,7 +7,7 @@ using ServiceStack.OrmLite;
 
 namespace Repository
 {
-    public class GaleryRepository : DataContext, IGaleryRepository
+    public class GaleryRepository : BaseRepository, IGaleryRepository
     {
         public List<PhotoGalery> GetAllPhotoGaleries()
         {
@@ -15,10 +15,7 @@ namespace Repository
 
             CreateTableIfNotExists<PhotoGalery>();
 
-            OrmLiteConfig.DialectProvider = DefaultProvider;
-            var dbFactory = new OrmLiteConnectionFactory(SqliteFileDb, DefaultProvider);
-
-            using (var db = dbFactory.Open())
+            using (var db = Connection.Open())
             {
                 imageGaleries = db.Select<PhotoGalery>();
             }

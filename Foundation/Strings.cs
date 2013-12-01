@@ -16,5 +16,16 @@ namespace Foundation
         {
             public const string UserContext = "UserContext";
         }
+
+        public struct Multilingual
+        {
+            public struct Home
+            {
+                public const string Workshop = "Home_Workshop";
+                public const string AboutMe = "Home_AboutMe";
+                public const string AboutMeText = "Home_AboutMeText";
+                public const string ReadMore = "Home_ReadMore";
+            }
+        }
     }
 }

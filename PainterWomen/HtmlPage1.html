@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+
+p.MsoTitle
+	{border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            margin-top:0cm;
+	        margin-right:0cm;
+	        margin-bottom:15.0pt;
+	        margin-left:0cm;
+	        padding:0cm;
+	        font-size:26.0pt;
+	        font-family:"Cambria","serif";
+	        color:#17365D;
+	        letter-spacing:.25pt;
+	}
+ p.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+a:link
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;
+        }
+pre
+	{margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	        margin-left: 0cm;
+            margin-right: 0cm;
+            margin-top: 0cm;
+        }
+p.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+p.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+p.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+    </style>
+</head>
+<body>
+
+    <div style="mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
+mso-border-bottom-themecolor:accent1;padding:0cm 0cm 4.0pt 0cm">
+        <p class="MsoTitle">
+            Angular.js 101<o:p></o:p></p>
+    </div>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight:normal"><span style="mso-fareast-language:TR;mso-no-proof:yes"><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @0 1 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum 0 0 @1" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @2 1 2" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @3 21600 pixelWidth" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @3 21600 pixelHeight" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @0 0 1" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @6 1 2" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @7 21600 pixelWidth" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @8 21600 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @7 21600 pixelHeight" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @10 21600 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ <o:lock v:ext="edit" aspectratio="t" xmlns:o="urn:schemas-microsoft-com:office:office"/>
+</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75"
+ style='width:383.25pt;height:108pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="file:///C:\Users\BARIS~1.OZA\AppData\Local\Temp\msohtmlclip1\01\clip_image001.png"
+  o:title="" xmlns:v="urn:schemas-microsoft-com:vml"/>
+</v:shape><![endif]--><![if !vml]>
+        <img height="144" src="file:///C:/Users/BARIS~1.OZA/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png" v:shapes="Picture_x0020_1" width="511" /><![endif]></span><o:p></o:p></b></p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight:normal">Javascript: Client Side’ın Yükselişi<o:p></o:p></b></p>
+    <p class="MsoNormal">
+        Donanımların çok hızlı bir şekilde gelişmesi, akıllı telefon ve tablet kullanımlarının artması sonucunda artık client side’a verilen önem de aynı şekilde artmaya başladı, e tabii client side’a verilen önem artınca javascript’e verilen önem de artmış sayıldı. Eskiden bilgisayara, telefona acı çektiren client side operasyonları şimdi sinek ısırığı gibi gelmeye başladı. Artık client side bağımsızlığını ilan etti diyebiliriz.<o:p></o:p></p>
+    <p class="MsoNormal">
+        Artık durum öyle bir hal alıyor ki server side client side’a data sağlasın geri kalan işleri client side kendi halletsine doğru hızlı adımlarla ilerliyoruz. Facebook, Gmail, Yahoo Mail, Twitter gibi single page application’ların hayatımızda oldukça fazla yer etmesi sonucu, internete giren kullanıcılar artık bu sitelere benzer siteler görmek istiyorlar. Kullanıcı ile daha çok etkileşimde olan, hızlı çalışan, sürekli sayfaların yenilenmediği siteler yapmak da artık bir seçim değil zorunluluk halini almaya başladı. Böyle yapılar hazırlamak için birkaç seçeneğimiz mevcut; javascript gurusu olup kendi kütüphanelerimizi, framework’lerimizi yazıp esnek bir yapı hazırlamak, JQuery gibi kütüphaneleri kullanarak bu tür sistemler hazırlamak veya sırf bu tür sistemler hazırlamak için yazılmış javascript framework’lerini kullanmak. Peki genelde neden bu tür framework’leri kullanmıyoruz? Bunun için oldukça geçerli sebeplerimiz var.
+        <br />
+        1-Öğrenmek için vakit harcamak lazım<br />
+        2-Hali hazırda bildiğimiz JQuery ile işlerimizi halledebiliyoruz<br />
+        3-Korkuyoruz.<br />
+        Sanırım 3. şık en geçerli olanı. Çünkü projelerin hep bir deadline’ı olur ve buna uymamız gerekir. Bu deadline içerisinde bir aksilik çıksın istemeyiz, bir sorun olduğu zaman çok hakim olmadığımız bir framework ile başbaşa olmak istemeyiz.<o:p></o:p></p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight:normal">Neden Bir Javascript Framework’u Kullanmalıyız?<o:p></o:p></b></p>
+    <p class="MsoNormal">
+        Öğrenmesi hiç de sandığımız kadar zor değil, öğrenmek için öyle abartılacak süreler harcamamıza gerek yok ve korkacak bir şey yok. Evet deadline’lar yine var ancak proje sonuna kadar JQuery ile güzel bir yapı oturtmak için harcadığımız süre sanmıyorum ki kullandığımız framework’le yaşadığımız sorunları çözmekten kısa olsun. Ayrıca client side’da da test edilebilir kodlar yazmak (tabii test kodlarını da yazdığımızı varsayarak :) ) bize projenin ilerleyen safhalarında oldukça hız ve özgürlük kazandıracaktır.<o:p></o:p></p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight:normal"><o:p>&nbsp;</o:p></b></p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight:normal">Neden Angular.js?<o:p></o:p></b></p>
+    <p class="MsoNormal">
+        Angular.js google destekli open-source bir javascript mvc framework’udur. Seçim yaparken Angular.js’i diğer mvc framework’lerinden ayıran özellikleri; tek başına ihtiyaçlarınızın neredeyse tamamını karşılıyor olması, rakiplerine göre öğrenmesinin oldukça kolay olması ve test edilebilir javascript kodları yazabilmemize olanak sağlaması oldu. Angular.js’i <a href="http://www.angularjs.org">http://www.angularjs.org</a> adresinden indirilebilir veya <a href="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js">https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js</a> cdn’inden direkt projenize ekleyebilirsiniz.<o:p></o:p></p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight:normal"><o:p>&nbsp;</o:p></b></p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight:normal">Başlamadan Önce<o:p></o:p></b></p>
+    <p class="MsoNormal">
+        İlk önce Angular.js’e bir merhaba dedikten sonra Angular.js’in genel yapısına biraz değinip, son olarak da ufak bir uygulama yapıp bu angular.js’e giriş niteliğindeki yazıyı bitirmeyi düşünüyorum. Örnekleri yapmak için herhangi bir text editörü işinizi görecektir. Intellisense için ise WebStorm öneririm. 30 günlük ücretsiz deneme sürümünü <a href="http://www.jetbrains.com/webstorm/download/">http://www.jetbrains.com/webstorm/download/</a> adresinden indirebilirsiniz.<o:p></o:p></p>
+    <p class="MsoNormal">
+        <b style="mso-bidi-font-weight:normal">Angular.js’e Merhaba<o:p></o:p></b></p>
+    <pre style="line-height: 12.0pt; background: white"><span class="nt"><span style="font-size:9.0pt;font-family:Consolas;color:navy">&lt;html</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"> </span><span class="na"><span style="font-size: 9.0pt; font-family: Consolas; color: teal; background: yellow; mso-highlight: yellow">ng-app</span></span><span class="nt"><span style="font-size:9.0pt;font-family:Consolas;color:navy">&gt;</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span class="nt"><span style="font-size:9.0pt;font-family:Consolas;color:navy">&lt;head&gt;</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span class="nt"><span style="font-size:9.0pt;font-family:Consolas;color:navy">&lt;script </span></span><span class="na"><span style="font-size:9.0pt;font-family:Consolas;color:teal">src=</span></span><span class="s"><span style="font-size:9.0pt;font-family:Consolas;color:#DD1144">&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js&quot;</span></span><span class="nt"><span style="font-size:9.0pt;font-family:Consolas;color:navy">&gt;&lt;/script&gt;</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span class="nt"><span style="font-size:9.0pt;font-family:Consolas;color:navy">&lt;/head&gt;</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span class="nt"><span style="font-size:9.0pt;font-family:Consolas;color:navy">&lt;body&gt;</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black"> </span><span class="nt"><span style="font-size:9.0pt;font-family:Consolas;color:navy">&lt;input</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"> </span><span class="na"><span style="font-size:9.0pt;font-family:Consolas;color:teal">type=</span></span><span class="s"><span style="font-size:9.0pt;font-family:Consolas;color:#DD1144">&quot;text&quot;</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"> </span><span class="na"><span style="font-size: 9.0pt; font-family: Consolas; color: teal; background: yellow; mso-highlight: yellow">ng-model</span><span style="font-size:9.0pt;font-family:Consolas;color:teal">=</span></span><span class="s"><span style="font-size:9.0pt;font-family:Consolas;color:#DD1144">&quot;isminiz&quot;</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"> </span><span class="na"><span style="font-size:9.0pt;font-family:Consolas;color:teal">placeholder=</span></span><span class="s"><span style="font-size:9.0pt;font-family:Consolas;color:#DD1144">&quot;Adınızı Giriniz&quot;</span></span><span class="nt"><span style="font-size:9.0pt;font-family:Consolas;color:navy">&gt;</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"> </span><span class="nt"><span style="font-size:9.0pt;font-family:Consolas;color:navy">&lt;br/&gt;</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black">Merhaba <span style="background: yellow; mso-highlight: yellow">{{isminiz}}</span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span class="nt"><span style="font-size:9.0pt;font-family:Consolas;color:navy">&lt;/body&gt;</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span class="nt"><span style="font-size:9.0pt;font-family:Consolas;color:navy">&lt;/html&gt;</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"><o:p></o:p></span></pre>
+    <p class="MsoNormal">
+        <a href="https://gist.github.com/ozaydinb/7212134">https://gist.github.com/ozaydinb/7212134</a> adresinden örneğe ulaşabilirsiniz.<o:p></o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        Bu örneği bir browser ile açtığınız zaman karşınıza bir textbox çıkacak ver textbox’a girilen metin “Merhaba”dan sonra yer alıyor olacak. Peki bu nasıl gerçekleşiyor? Örnekteki sarı alanlar dikkatinizi çekmiş olmalı. Gelin bakalım bu sarı alandaki tanımlamalar ne işe yarıyor;<o:p></o:p></p>
+    <p class="MsoListParagraphCxSpFirst" style="text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:175.4pt">
+        <![if !supportLists]><span style="mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><b style="mso-bidi-font-weight:normal">ng-app:</b> bu directive (daha sonra directive’lerin ne olduklarına değineceğiz) en basit anlamda Angular.js’in kapsama alanını belirler. Yani burada demek istediğimiz &lt;html&gt; &lt;/html&gt; tag’leri arasına yazılmış tüm kodlar angular.js tarafından elden geçirilsin. Eğer ng-app’i herhangi bir div’e verirsek sadece ilgili div Angular.js tarafından yorumlanır.<o:p></o:p></p>
+    <p class="MsoListParagraphCxSpMiddle" style="text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:175.4pt">
+        <![if !supportLists]><span style="mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><b style="mso-bidi-font-weight:normal">ng-model:</b> bu directive scope’unuzda bir değişken tanımlanızı sağlar ve bu değişkenin binding’ini ilgili elementin value’usu veya text’i olarak ayarlar. Burada two way binding (Türkçeleştirmek gerekirse çift taraflı bağlama belki uygun olabilir) kurulur. <o:p></o:p>
+    </p>
+    <p class="MsoListParagraphCxSpLast" style="text-indent:-18.0pt;mso-list:l0 level1 lfo1;
+tab-stops:175.4pt">
+        <![if !supportLists]><span style="mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:Calibri"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><b style="mso-bidi-font-weight:normal">{{isminiz}}:</b> çift süslü parantezler arasına scope içerisinde tanımlanan değişkenleri kullanarak bunları ekranda gösterebilir veya çeşitli işlemlere sokabiliriz.<o:p></o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        Yukarıda örneği yaparken dikkatimizi çekmiştir; hiç javascript kodu yazmadan işlerimizi gerçekleştirdik. Yukarıda yaptığımızı saf javascript ile veya JQuery ile yaptığımızı düşünürsek bu ufak örnekte bile işimizi ne kadar kolaylaştırdığını görebiliriz.<o:p></o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        <b style="mso-bidi-font-weight:
+normal">Nasıl Çalışır?<o:p></o:p></b></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        Sayfa yüklenip Angular.js devreye girdiği anda tüm html’imizi gezip tekrar düzenler ve html standardında olmayan directive, controller gibi mekanizmaları düzenleyerek tarayıcının anlayabileceği saf html koduna dönüştürür.<o:p></o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        Angular.js’in mvc yapısında modeller javascript nesneleridir, view’lar html şablonları ve controller’lar ise iş yapan javascript function’larıdır.<o:p></o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        Standartlardan şaşmayıp basit bir todo uygulaması yapıp biraz daha detaylarına bakalım; Yaptığımız uygulama ile kullanıcı bir yapılacaklar listesi hazırlayıp, bu liste içerisinde arama yapabilecek, herhangi bir kalemi yapıldı olarak işaretleyebilecek veya silebilecek. Bir todoController’ımız (Controller), todo nesnemiz (Model) ve todo’ları gösterebileceğimiz html’imiz (view) olacak.<o:p></o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        İlk önce html’imize bir göz atalım ve bir önceki örneğe göre farklı olarak neler kullandığımıza bakalım;<o:p></o:p></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:navy;mso-fareast-language:TR">&lt;html</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"> </span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:teal;
+mso-fareast-language:TR">ng-app</span><span style="font-size:9.0pt;font-family:
+Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;mso-fareast-language:
+TR">&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:navy;mso-fareast-language:TR">&lt;head&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp; &nbsp;&nbsp;</span></span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:navy;mso-fareast-language:TR">&lt;script </span><span style="font-size:
+9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:teal;mso-fareast-language:TR">src=</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#DD1144;
+mso-fareast-language:TR">&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js&quot;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:navy;mso-fareast-language:TR">&gt;&lt;/script&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;script </span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:teal;
+mso-fareast-language:TR">src=</span><span style="font-size:9.0pt;font-family:
+Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#DD1144;mso-fareast-language:
+TR">&quot;todoController.js&quot;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&gt;&lt;/script&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;script </span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:teal;
+mso-fareast-language:TR">src=</span><span style="font-size:9.0pt;font-family:
+Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#DD1144;mso-fareast-language:
+TR">&quot;todo.js&quot;</span><span style="font-size:9.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;mso-fareast-language:TR">&gt;&lt;/script&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;style </span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:teal;
+mso-fareast-language:TR">type=</span><span style="font-size:9.0pt;font-family:
+Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#DD1144;mso-fareast-language:
+TR">&quot;text/css&quot;</span><span style="font-size:9.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;mso-fareast-language:TR">&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#445588;
+mso-fareast-language:TR">.todoCompleted</span></b><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"> {<o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b>text-decoration:</b> <b>line-through</b>;<o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;/style&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:navy;mso-fareast-language:TR">&lt;/head&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:navy;mso-fareast-language:TR">&lt;body&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:navy;mso-fareast-language:TR">&lt;div</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"> </span><span style="font-size: 9.0pt; font-family: Consolas; mso-fareast-font-family: &quot;Times New Roman&quot;; color: teal; background: yellow; mso-highlight: yellow; mso-fareast-language: TR">ng-controller=</span><span style="font-size: 9.0pt; font-family: Consolas; mso-fareast-font-family: &quot;Times New Roman&quot;; color: #DD1144; background: yellow; mso-highlight: yellow; mso-fareast-language: TR">&quot;todoController&quot;</span><span style="font-size: 9.0pt; font-family: Consolas; mso-fareast-font-family: &quot;Times New Roman&quot;; color: navy; background: yellow; mso-highlight: yellow; mso-fareast-language: TR">&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;table&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;tr&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;td</span><span style="font-size:9.0pt;font-family:
+Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-fareast-language:
+TR"> </span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-fareast-language:TR">colspan=</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#DD1144;mso-fareast-language:TR">&quot;2&quot;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:navy;mso-fareast-language:TR">&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR">Ara:</span><span style="font-size:9.0pt;font-family:
+Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;mso-fareast-language:
+TR">&lt;input</span><span style="font-size:9.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-fareast-language:
+TR"> </span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:teal;mso-fareast-language:TR">type=</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#DD1144;mso-fareast-language:TR">&quot;text&quot;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"> </span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:teal;
+mso-fareast-language:TR">ng-model=</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#DD1144;
+mso-fareast-language:TR">&quot;searchText&quot;</span><span style="font-size:
+9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"> </span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">/&gt;&lt;/td&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;/tr&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;tr&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;td&gt;&lt;input</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"> </span><span style="font-size:9.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:teal;mso-fareast-language:TR">type=</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#DD1144;mso-fareast-language:TR">&quot;text&quot;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"> </span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:teal;
+mso-fareast-language:TR">ng-model=</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#DD1144;
+mso-fareast-language:TR">&quot;todoName&quot;</span><span style="font-size:
+9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:navy;mso-fareast-language:TR">&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"> </span><span style="font-size:9.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;mso-fareast-language:TR">&lt;/input&gt;&lt;/td&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;td&gt;&lt;button</span><span style="font-size:
+9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"> </span><span style="font-size: 9.0pt; font-family: Consolas; mso-fareast-font-family: &quot;Times New Roman&quot;; color: teal; background: yellow; mso-highlight: yellow; mso-fareast-language: TR">ng-click</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:teal;mso-fareast-language:TR">=</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#DD1144;
+mso-fareast-language:TR">&quot;addTodo(todoName)&quot;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:navy;mso-fareast-language:TR">&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR">Ekle</span><span style="font-size:9.0pt;font-family:
+Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;mso-fareast-language:
+TR">&lt;/button&gt;&lt;/td&gt;</span><span style="font-size:9.0pt;font-family:
+Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-fareast-language:
+TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;/tr&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;/table&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;ul&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;li</span><span style="font-size:9.0pt;font-family:
+Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-fareast-language:
+TR"> </span><span style="font-size: 9.0pt; font-family: Consolas; mso-fareast-font-family: &quot;Times New Roman&quot;; color: teal; background: yellow; mso-highlight: yellow; mso-fareast-language: TR">ng-repeat</span><span style="font-size:9.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:teal;mso-fareast-language:TR">=</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#DD1144;mso-fareast-language:TR">&quot;todo in todoList | filter:searchText&quot;</span><span style="font-size:9.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;mso-fareast-language:TR">&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;input</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"> </span><span style="font-size:9.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:teal;mso-fareast-language:TR">type=</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#DD1144;mso-fareast-language:TR">&quot;checkbox&quot;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"> </span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:teal;
+mso-fareast-language:TR">ng-model=</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#DD1144;
+mso-fareast-language:TR">&quot;todo.isCompleted&quot;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:navy;mso-fareast-language:TR">&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;span</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"> </span><span style="font-size: 9.0pt; font-family: Consolas; mso-fareast-font-family: &quot;Times New Roman&quot;; color: teal; background: yellow; mso-highlight: yellow; mso-fareast-language: TR">ng-class</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:teal;mso-fareast-language:TR">=</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:#DD1144;
+mso-fareast-language:TR">&quot;{todoCompleted:todo.isCompleted}&quot;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:navy;mso-fareast-language:TR">&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR">{{todo.name}}</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;/span&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;button</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"> </span><span style="font-size:9.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:teal;mso-fareast-language:TR">ng-click=</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#DD1144;mso-fareast-language:TR">&quot;deleteTodo($index)&quot;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:navy;mso-fareast-language:TR">&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR">Sil</span><span style="font-size:9.0pt;font-family:
+Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;mso-fareast-language:
+TR">&lt;/button&gt;</span><span style="font-size:9.0pt;font-family:Consolas;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-fareast-language:
+TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:TR"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span></span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:navy;
+mso-fareast-language:TR">&lt;/li&gt;</span><span style="font-size:9.0pt;
+font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;
+mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:navy;mso-fareast-language:TR">&lt;/ul&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:navy;mso-fareast-language:TR">&lt;/div&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:navy;mso-fareast-language:TR">&lt;/body&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="margin-bottom: 0cm; margin-bottom: .0001pt; line-height: 12.0pt; tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt; background: white">
+        <span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:navy;mso-fareast-language:TR">&lt;/html&gt;</span><span style="font-size:9.0pt;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:black;mso-fareast-language:TR"><o:p></o:p></span></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        <o:p>&nbsp;</o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        Bir önce örneğe göre burada karşımıza çıkan ng-controller, ng-click, ng-repeat ve ng-class directive’leri var. İlk önce bu directive’ler ne işe yarıyor onlara bir bakalım ve ardından controller’ımızı nasıl oluşturduğumuza bakalım;<o:p></o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        <b style="mso-bidi-font-weight:
+normal">ng-controller: </b>İlgili element’in hangi controller ile yönetileceğini belirttiğimiz kısımdır. Bir html sayfasında birden fazla controller olabilir. Bu kontroller farklı farklı element’ler üzerinde işlem görebileceği için iç içe de controller kullanımı yapabiliriz.<br />
+        Kısaca controller tanımlaması yaptığımız element tarafından kapsanan diğer elementler içerisinde kullandığımız değişkenler, fonksiyonlar ilgili controller tarafından karşılanır. Yukarıdaki örneğe bakarsak <span style="font-size:9.0pt;
+line-height:115%;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:teal;mso-fareast-language:TR">ng-model=</span><span style="font-size:
+9.0pt;line-height:115%;font-family:Consolas;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:#DD1144;mso-fareast-language:TR">&quot;searchText&quot; </span>diye bir satırımız var, burada bir model tanımlaması yapılıyor aynı zamanda bu model’e todoController içerisinden $scope.searchText olarak da erişebiliriz, hatta controller üzerinden bu değişkenin değerini değiştirirsek bind olduğu element’in değeri de değişecektir.<o:p></o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        <b style="mso-bidi-font-weight:
+normal">ng-click: </b>Adından da anlaşılacağı gibi ilgili element’e click event’i atamamızı sağlar. ng-click içerisine de hangi fonksiyonun çağrılacağını varsa parametrelerini buradan gönderebiliriz. Mesela örneğimizde todoText değişkeni parametre olarak gönderiliyor.<o:p></o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        <b style="mso-bidi-font-weight:
+normal">ng-repeat: </b>Galiba en çok kullanılan Angular.js directive’i budur. Bir liste üzerinde dönüp işlem yapmamızı sağlar. C#’taki foreach benzeri bir syntax’ı vardır. Buradan anlıyoruz ki todoController todoList adında bir array içeriyor.<o:p></o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        <b style="mso-bidi-font-weight:
+normal">ng-class: </b>Çok kullanılan Angular.js directive’lerinden birisi de budur. Yaptığı iş çok basitçe ilgili element’e class atamaktır ama bunu yaparken koşul koymamıza olanak veriyor. Örneğimizde de olduğu gibi eğer todo.isCompleted true ise todoCompleted class’ını ilgili element’e atamaktadır.<o:p></o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        Şimdi Controller’ımıza bir göz atalım;<o:p></o:p></p>
+    <pre style="line-height: 12.0pt; background: white"><span class="kd"><b><span style="font-size:9.0pt;font-family:Consolas;color:black">var</span></b></span><span style="font-size:9.0pt;font-family:Consolas;color:black"> <span class="nx">todo</span><span class="o"><b>=</b></span> <span class="kd"><b>function</b></span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black"><span style="mso-spacerun:yes">    </span><span class="k"><b>return</b></span> <span class="p">{</span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black"><span style="mso-spacerun:yes">        </span><span class="nx">name</span><span class="o"><b>:</b></span><span class="nx">name</span><span class="p">,</span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;font-family:Consolas;color:black"><span style="mso-spacerun:yes">        </span><span class="nx">isCompleted</span><span class="o"><b>:</b></span><span class="kc"><b>false</b></span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black"><span style="mso-spacerun:yes">    </span><span class="p">}</span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span class="p"><span style="font-size:9.0pt;font-family:Consolas;
+color:black">};</span></span><span style="font-size:9.0pt;font-family:Consolas;
+color:black"><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span class="kd"><b><span style="font-size:9.0pt;font-family:Consolas;
+color:black"><o:p>&nbsp;</o:p></span></b></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span class="kd"><b><span style="font-size:9.0pt;
+font-family:Consolas;color:black">function</span></b></span><span style="font-size:9.0pt;font-family:Consolas;color:black"> <span class="nx">todoController</span><span class="p">(</span><span class="nx"><span style="background: yellow; mso-highlight: yellow">$scope</span></span><span class="p">)</span> <span class="p">{</span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black"><span style="mso-spacerun:yes">    </span><span class="nx">$scope</span><span class="p">.</span><span class="nx">todoList</span> <span class="o"><b>=</b></span><span class="p">[];</span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black">&nbsp;<o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black"><span style="mso-spacerun:yes">    </span><span class="nx">$scope</span><span class="p">.</span><span class="nx">deleteTodo</span> <span class="o"><b>=</b></span> <span class="kd"><b>function</b></span><span class="p">(</span><span class="nx">index</span><span class="p">)</span> <span class="p">{</span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black"><span style="mso-spacerun:yes">        </span><span class="nx">$scope</span><span class="p">.</span><span class="nx">todoList</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span></span><span class="mi"><span style="font-size:9.0pt;font-family:Consolas;color:#009999">1</span></span><span class="p"><span style="font-size:9.0pt;font-family:Consolas;color:black">);</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black"><span style="mso-spacerun:yes">    </span><span class="p">};</span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;font-family:Consolas;color:black">&nbsp;<o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black"><span style="mso-spacerun:yes">    </span><span class="nx">$scope</span><span class="p">.</span><span class="nx">addTodo</span> <span class="o"><b>=</b></span> <span class="kd"><b>function</b></span><span class="p">()</span> <span class="p">{</span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;font-family:Consolas;color:black"><span style="mso-spacerun:yes">        </span><span class="kd"><b>var</b></span> <span class="nx">id</span> <span class="o"><b>=</b></span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">todoList</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black"><span style="mso-spacerun:yes">        </span><span class="nx">$scope</span><span class="p">.</span><span class="nx">todoList</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k"><b>new</b></span> <span class="nx">todo</span><span class="p">(</span><span class="nx">$scope</span><span class="p">.</span><span class="nx">todoName</span><span class="p">,</span><span class="nx">id</span><span class="p">));</span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black"><span style="mso-spacerun:yes">        </span><span class="nx">$scope</span><span class="p">.</span><span class="nx">todoName</span><span class="o"><b>=</b></span></span><span class="s1"><span style="font-size:9.0pt;
+font-family:Consolas;color:#DD1144">&#39;&#39;</span></span><span class="p"><span style="font-size:9.0pt;font-family:Consolas;color:black">;</span></span><span style="font-size:9.0pt;font-family:Consolas;color:black"><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span style="font-size:9.0pt;
+font-family:Consolas;color:black"><span style="mso-spacerun:yes">    </span><span class="p">};</span><o:p></o:p></span></pre>
+    <pre style="line-height: 12.0pt; background: white"><span class="p"><span style="font-size:9.0pt;font-family:Consolas;
+color:black">}</span></span><span style="font-size:9.0pt;font-family:Consolas;
+color:black"><o:p></o:p></span></pre>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        <o:p>&nbsp;</o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        Evet Controller’ımız oldukça basit bir şekilde iki tane fonksiyon ve bir de todoList array’ini barındırıyor. Sarı ile işaretlediğimiz $scope dikkatinizi çekmiştir. Her controller’ın kendi scope’u vardır bu scope üzerinde işlemlerini gerçekleştirir. Yani bizim view’ımızda deleteTodo ya da addTodo diye çağırdığımız fonksiyonlar todoController’ın scope’u içerisinde aranıp çalıştırılıyor. Aynı şekilde ng-model ile view’da tanımladığımız değişkenlere de $scope.degiskenAdi şeklinde erişebiliriz.<o:p></o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        Yukarıdaki örneği <a href="https://gist.github.com/ozaydinb/7213361">https://gist.github.com/ozaydinb/7213361</a> adresinden indirebilirsiniz.<o:p></o:p></p>
+    <p class="MsoNormal" style="tab-stops:175.4pt">
+        Angular.js’e böylece ufak bir giriş yaptığımızı düşünüyorum. Eğer bir aksilik çıkmaz ise bundan sonraki Angular.js makalesinde yaptığımız todo uygulamasını biraz daha geliştirip işlemlerimizi server side’a nasıl gönderdiğimize ve verileri nasıl aldığımıza değinmeyi düşünüyorum. <o:p></o:p>
+    </p>
+
+</body>
+</html>

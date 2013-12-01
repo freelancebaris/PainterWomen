@@ -90,11 +90,13 @@
     <Compile Include="Abstraction\Business\IDenemeBusiness.cs" />
     <Compile Include="Abstraction\Business\IGaleryBusiness.cs" />
     <Compile Include="Abstraction\Business\IGalleryBusiness.cs" />
+    <Compile Include="Abstraction\Business\IWorkshopBusiness.cs" />
     <Compile Include="Abstraction\Repository\AdminKP\IAdminAboutRepository.cs" />
     <Compile Include="Abstraction\Repository\IAboutRepository.cs" />
     <Compile Include="Abstraction\Business\IMenuBusiness.cs" />
     <Compile Include="Abstraction\Repository\IGaleryRepository.cs" />
     <Compile Include="Abstraction\Repository\IGalleryRepository.cs" />
+    <Compile Include="Abstraction\Repository\IWorkshopRepository.cs" />
     <Compile Include="Abstraction\Services\IMultilingualService.cs" />
     <Compile Include="Abstraction\Services\ISessionHelper.cs" />
     <Compile Include="Core.cs" />
@@ -108,6 +110,7 @@
     <Compile Include="Model\Gallery\Album.cs" />
     <Compile Include="Model\Galery\PhotoType.cs" />
     <Compile Include="Model\Galery\viewModel\GaleryViewModel.cs" />
+    <Compile Include="Model\Workshop\WorkshopItem.cs" />
     <Compile Include="Model\Layout\Menu.cs" />
     <Compile Include="Model\SessionHelper\UserContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

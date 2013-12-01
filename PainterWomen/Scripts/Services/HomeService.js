@@ -1,4 +1,4 @@
-﻿painterapp.factory('homeService', function($http,$q) {
+﻿painterapp.factory('homeService', function ($http, $q) {
     return {
         getLinks: function (selectedPage) {
             debugger;
@@ -14,6 +14,19 @@
                 }
             });
             return  deferred.promise;
+        },
+        getWorkshops: function () {
+            debugger;
+            var deferred = $q.defer();
+            $http({
+                url: getBaseUrl() + 'Ajax/Public/GetWorkshops',
+                method: 'POST'
+            }).success(function(response) {
+                if (response.success) {
+                    deferred.resolve(response.workshops);
+                }
+            });
+            return deferred.promise;
         }
     };
 });

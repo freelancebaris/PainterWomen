@@ -67,6 +67,7 @@
     <Compile Include="GaleryRepository.cs" />
     <Compile Include="GalleryRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkshopRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
